@@ -1,0 +1,4355 @@
+-- CLICKER MADNESS
+-- b0.01
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+--
+
+if not game:IsLoaded() then
+	wait()
+end
+
+if game.PlaceId == 5490351219 then
+
+	if _G.EXH_ACTIVE == true then
+		_G.LOCALLEVEL += 1
+		if _G.LOCALLEVEL >= 3 then
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "dumbass";
+				Text = "fucking exhibition hub is already running. ching chong bing bong?? like wtf. 你是个白痴";
+				Duration = 5;
+			})
+		else
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Warning";
+				Text = "Exhibition Hub is already running.";
+				Duration = 5;
+			})
+		end
+	else
+		_G.LOCALLEVEL = 0
+		_G.EXH_ACTIVE = true
+
+		blureffect = Instance.new("BlurEffect")
+		EXHIBITION = Instance.new("ScreenGui")
+		loading = Instance.new("ImageLabel")
+		welcome = Instance.new("TextLabel")
+		designx = Instance.new("ImageLabel")
+		dam = Instance.new("ImageLabel")
+		vers = Instance.new("TextLabel")
+		title = Instance.new("TextLabel")
+		UIGradient = Instance.new("UIGradient")
+		dam_2 = Instance.new("ImageLabel")
+		lliinneee = Instance.new("TextLabel")
+		UIGradient_2 = Instance.new("UIGradient")
+		minimized = Instance.new("ImageLabel")
+		TextLabel = Instance.new("TextLabel")
+		open = Instance.new("TextButton")
+		minimized_2 = Instance.new("ImageLabel")
+		confirm = Instance.new("ImageLabel")
+		TextLabel_2 = Instance.new("TextLabel")
+		yesxx = Instance.new("TextButton")
+		yesxx_2 = Instance.new("TextButton")
+		asdasd = Instance.new("ImageLabel")
+		Frame = Instance.new("ImageLabel")
+		a = Instance.new("ImageLabel")
+		a_2 = Instance.new("TextLabel")
+		UIGradient_3 = Instance.new("UIGradient")
+		close = Instance.new("ImageButton")
+		Frame_2 = Instance.new("ImageLabel")
+		PlayerFrame = Instance.new("ScrollingFrame")
+		TextLabel_3 = Instance.new("TextLabel")
+		flyfalse = Instance.new("TextButton")
+		flytrue = Instance.new("TextButton")
+		TextLabel_4 = Instance.new("TextLabel")
+		musicfalse = Instance.new("TextButton")
+		musictrue = Instance.new("TextButton")
+		TextLabel_5 = Instance.new("TextLabel")
+		TextLabel_6 = Instance.new("TextLabel")
+		TextLabel_7 = Instance.new("TextLabel")
+		walkspeedx = Instance.new("TextBox")
+		jumppowerx = Instance.new("TextBox")
+		tradesfalse = Instance.new("TextButton")
+		tradestrue = Instance.new("TextButton")
+		a_3 = Instance.new("TextLabel")
+		AutofarmFrame = Instance.new("ScrollingFrame")
+		clicktrue = Instance.new("TextButton")
+		clickfalse = Instance.new("TextButton")
+		TextLabel_9 = Instance.new("TextLabel")
+		TextLabel_10 = Instance.new("TextLabel")
+		clickcounterx = Instance.new("TextLabel")
+		TextLabel_11 = Instance.new("TextLabel")
+		rebirthfalse = Instance.new("TextButton")
+		rebirthtrue = Instance.new("TextButton")
+		TextLabel_12 = Instance.new("TextLabel")
+		gemsnowx = Instance.new("TextLabel")
+		TextLabel_13 = Instance.new("TextLabel")
+		gemsbeforex = Instance.new("TextLabel")
+		TextLabel_14 = Instance.new("TextLabel")
+		rebirthamountx = Instance.new("TextBox")
+		AutoBuyFrame = Instance.new("ScrollingFrame")
+		TextLabel_15 = Instance.new("TextLabel")
+		TextLabel_16 = Instance.new("TextLabel")
+		eggtrue = Instance.new("TextButton")
+		eggpricex = Instance.new("TextLabel")
+		TextLabel_17 = Instance.new("TextLabel")
+		selectedegg = Instance.new("TextLabel")
+		eggfalse = Instance.new("TextButton")
+		changeselectedegg = Instance.new("TextButton")
+		otherframe2 = Instance.new("ScrollingFrame")
+		advertisetrue = Instance.new("TextButton")
+		TextLabel_18 = Instance.new("TextLabel")
+		advertisefalse = Instance.new("TextButton")
+		TextLabel_19 = Instance.new("TextLabel")
+		TextLabel_20 = Instance.new("TextLabel")
+		freerobux = Instance.new("TextButton")
+		SettingsFrame = Instance.new("ScrollingFrame")
+		TextLabel_21 = Instance.new("TextLabel")
+		shadowfalse = Instance.new("TextButton")
+		shadowtrue = Instance.new("TextButton")
+		TextLabel_22 = Instance.new("TextLabel")
+		selfdestruct = Instance.new("TextButton")
+		TextLabel_23 = Instance.new("TextLabel")
+		vers_2 = Instance.new("TextLabel")
+		TextLabel_24 = Instance.new("TextLabel")
+		lastupdat = Instance.new("TextLabel")
+		TextLabel_25 = Instance.new("TextLabel")
+		TextLabel_26 = Instance.new("TextLabel")
+		damn = Instance.new("ImageLabel")
+		damn2 = Instance.new("ImageLabel")
+		CatergoryFrame = Instance.new("ScrollingFrame")
+		Player = Instance.new("TextButton")
+		Autofarm = Instance.new("TextButton")
+		Autobuyx = Instance.new("TextButton")
+		Funx = Instance.new("TextButton")
+		Teleportx = Instance.new("TextButton")
+		Serverx = Instance.new("TextButton")
+		Settingsx = Instance.new("TextButton")
+		ImageLabel = Instance.new("ImageLabel")
+		TeleportFrame = Instance.new("ScrollingFrame")
+		TextLabel_27 = Instance.new("TextLabel")
+		tptool = Instance.new("TextButton")
+		TextLabel_28 = Instance.new("TextLabel")
+		spawntp = Instance.new("TextButton")
+		TextLabel_29 = Instance.new("TextLabel")
+		lavatp = Instance.new("TextButton")
+		TextLabel_30 = Instance.new("TextLabel")
+		deserttp = Instance.new("TextButton")
+		TextLabel_31 = Instance.new("TextLabel")
+		oceantp = Instance.new("TextButton")
+		TextLabel_32 = Instance.new("TextLabel")
+		firetp = Instance.new("TextButton")
+		TextLabel_33 = Instance.new("TextLabel")
+		moontp = Instance.new("TextButton")
+		TextLabel_34 = Instance.new("TextLabel")
+		citytp = Instance.new("TextButton")
+		TextLabel_35 = Instance.new("TextLabel")
+		futuretp = Instance.new("TextButton")
+		TextLabel_36 = Instance.new("TextLabel")
+		targetnametp = Instance.new("TextBox")
+		playertp = Instance.new("TextButton")
+		TextLabel_37 = Instance.new("TextLabel")
+		infitp = Instance.new("TextButton")
+		TextLabel_38 = Instance.new("TextLabel")
+		dominustp = Instance.new("TextButton")
+		TextLabel_39 = Instance.new("TextLabel")
+		spacetp = Instance.new("TextButton")
+		TextLabel_40 = Instance.new("TextLabel")
+		foresttp = Instance.new("TextButton")
+		TextLabel_41 = Instance.new("TextLabel")
+		stormtp = Instance.new("TextButton")
+		TextLabel_42 = Instance.new("TextLabel")
+		blockstp = Instance.new("TextButton")
+		TextLabel_43 = Instance.new("TextLabel")
+		toxictp = Instance.new("TextButton")
+		TextLabel_44 = Instance.new("TextLabel")
+		candytp = Instance.new("TextButton")
+		ServerFrame = Instance.new("ScrollingFrame")
+		TextLabel_45 = Instance.new("TextLabel")
+		flingtrue = Instance.new("TextButton")
+		flingfalse = Instance.new("TextButton")
+		targetflingname = Instance.new("TextBox")
+		TextLabel_46 = Instance.new("TextLabel")
+		rejoincli = Instance.new("TextButton")
+		eggselectorframe = Instance.new("ImageLabel")
+		ScrollingFrame = Instance.new("ScrollingFrame")
+		basicegg = Instance.new("TextButton")
+		lavaegg = Instance.new("TextButton")
+		desertegg = Instance.new("TextButton")
+		oceanegg = Instance.new("TextButton")
+		winteregg = Instance.new("TextButton")
+		toxicegg = Instance.new("TextButton")
+		candyegg = Instance.new("TextButton")
+		forestegg = Instance.new("TextButton")
+		stormegg = Instance.new("TextButton")
+		blockyegg = Instance.new("TextButton")
+		spaceegg = Instance.new("TextButton")
+		dominusegg = Instance.new("TextButton")
+		infegg = Instance.new("TextButton")
+		futureegg = Instance.new("TextButton")
+		cityegg = Instance.new("TextButton")
+		moonegg = Instance.new("TextButton")
+		fireegg = Instance.new("TextButton")
+		Choice = Instance.new("TextLabel")
+		Changelog = Instance.new("ImageLabel")
+		f = Instance.new("ImageLabel")
+		dam_3 = Instance.new("ImageLabel")
+		dam_4 = Instance.new("ImageLabel")
+		TextLabel_47 = Instance.new("TextLabel")
+		TextLabel_48 = Instance.new("TextLabel")
+		changelogframe = Instance.new("ScrollingFrame")
+		plus = Instance.new("TextLabel")
+		changed = Instance.new("TextLabel")
+		changed_2 = Instance.new("TextLabel")
+		plus_2 = Instance.new("TextLabel")
+		okx = Instance.new("TextButton")
+		serviceplr = game:GetService("Players").LocalPlayer
+		plr = game.Players.LocalPlayer
+
+		--Properties:
+
+		EXHIBITION.Name = "EXHIBITION </>"
+		EXHIBITION.Parent = game.CoreGui
+
+		loading.Name = "loading"
+		loading.Parent = EXHIBITION
+		loading.AnchorPoint = Vector2.new(0.5, 0.5)
+		loading.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		loading.BackgroundTransparency = 1.000
+		loading.Position = UDim2.new(0.499592543, 0, 0.49999997, 0)
+		loading.Size = UDim2.new(0, 236, 0, 236)
+		loading.Image = "rbxassetid://3570695787"
+		loading.ImageColor3 = Color3.fromRGB(11, 11, 11)
+		loading.ScaleType = Enum.ScaleType.Slice
+		loading.SliceCenter = Rect.new(100, 100, 100, 100)
+		loading.SliceScale = 0.050
+
+		blureffect.Parent = game.Lighting
+
+		welcome.Name = "welcome"
+		welcome.Parent = loading
+		welcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		welcome.BackgroundTransparency = 1.000
+		welcome.Position = UDim2.new(0.0762711838, 0, 0.135593206, 0)
+		welcome.Size = UDim2.new(0, 200, 0, 50)
+		welcome.ZIndex = 2
+		welcome.Font = Enum.Font.FredokaOne
+		welcome.Text = ""
+		welcome.TextColor3 = Color3.fromRGB(207, 207, 207)
+		welcome.TextSize = 34.000
+
+		designx.Name = "designx"
+		designx.Parent = loading
+		designx.AnchorPoint = Vector2.new(0.5, 0.5)
+		designx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		designx.BackgroundTransparency = 1.000
+		designx.Position = UDim2.new(0.420467049, 0, 0.412740797, 0)
+		designx.Size = UDim2.new(0, 233, 0, 229)
+		designx.ZIndex = -1
+		designx.Image = "rbxassetid://3570695787"
+		designx.ImageColor3 = Color3.fromRGB(31, 31, 31)
+		designx.ScaleType = Enum.ScaleType.Slice
+		designx.SliceCenter = Rect.new(100, 100, 100, 100)
+		designx.SliceScale = 0.050
+
+		dam.Name = "dam"
+		dam.Parent = loading
+		dam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dam.BackgroundTransparency = 1.000
+		dam.Position = UDim2.new(-0.719508648, 0, -0.746990502, 0)
+		dam.Size = UDim2.new(0, 548, 0, 548)
+		dam.ZIndex = -2
+		dam.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		vers.Name = "vers"
+		vers.Parent = loading
+		vers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		vers.BackgroundTransparency = 1.000
+		vers.Position = UDim2.new(0.457627118, 0, 0.817796588, 0)
+		vers.Size = UDim2.new(0, 200, 0, 50)
+		vers.Font = Enum.Font.FredokaOne
+		vers.Text = "b0.01"
+		vers.TextColor3 = Color3.fromRGB(57, 57, 57)
+		vers.TextSize = 14.000
+
+		title.Name = "title"
+		title.Parent = loading
+		title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		title.BackgroundTransparency = 1.000
+		title.Position = UDim2.new(0.0762711838, 0, 0.521186411, 0)
+		title.Size = UDim2.new(0, 200, 0, 42)
+		title.ZIndex = 2
+		title.Font = Enum.Font.FredokaOne
+		title.Text = "exhibition hub"
+		title.TextColor3 = Color3.fromRGB(255, 255, 255)
+		title.TextSize = 25.000
+		title.TextTransparency = 1.000
+		title.TextWrapped = true
+
+		UIGradient.Parent = title
+
+		dam_2.Name = "dam"
+		dam_2.Parent = loading
+		dam_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dam_2.BackgroundTransparency = 1.000
+		dam_2.Position = UDim2.new(-0.809322417, 0, -0.677135766, 0)
+		dam_2.Size = UDim2.new(0, 548, 0, 548)
+		dam_2.ZIndex = -2
+		dam_2.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		lliinneee.Name = "lliinneee"
+		lliinneee.Parent = loading
+		lliinneee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		lliinneee.BackgroundTransparency = 1.000
+		lliinneee.Position = UDim2.new(0.0762711838, 0, 0.648305058, 0)
+		lliinneee.Size = UDim2.new(0, 200, 0, 15)
+		lliinneee.ZIndex = 5
+		lliinneee.Font = Enum.Font.SourceSansBold
+		lliinneee.Text = "━━━━━━━━"
+		lliinneee.TextColor3 = Color3.fromRGB(255, 255, 255)
+		lliinneee.TextSize = 25.000
+		lliinneee.TextTransparency = 1.000
+		lliinneee.TextWrapped = true
+
+		UIGradient_2.Parent = lliinneee
+
+		minimized.Name = "minimized"
+		minimized.Parent = EXHIBITION
+		minimized.AnchorPoint = Vector2.new(0.5, 0.5)
+		minimized.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		minimized.BackgroundTransparency = 1.000
+		minimized.Position = UDim2.new(0.789142609, 0, 0.853948474, 0)
+		minimized.Size = UDim2.new(0, 140, 0, 75)
+		minimized.Visible = false
+		minimized.ZIndex = 99
+		minimized.Image = "rbxassetid://3570695787"
+		minimized.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		minimized.ScaleType = Enum.ScaleType.Slice
+		minimized.SliceCenter = Rect.new(100, 100, 100, 100)
+		minimized.SliceScale = 0.040
+		minimized.Active = true
+		minimized.Draggable = true
+
+		TextLabel.Parent = minimized
+		TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.BackgroundTransparency = 1.000
+		TextLabel.Position = UDim2.new(-0.214285716, 0, 0, 0)
+		TextLabel.Size = UDim2.new(0, 200, 0, 44)
+		TextLabel.ZIndex = 99
+		TextLabel.Font = Enum.Font.FredokaOne
+		TextLabel.Text = "exhibition hub"
+		TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel.TextSize = 14.000
+
+		open.Name = "open"
+		open.Parent = minimized
+		open.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		open.BackgroundTransparency = 1.000
+		open.Position = UDim2.new(0.114285715, 0, 0.575936675, 0)
+		open.Size = UDim2.new(0, 107, 0, 26)
+		open.ZIndex = 99
+		open.Font = Enum.Font.FredokaOne
+		open.Text = "Open"
+		open.TextColor3 = Color3.fromRGB(116, 116, 116)
+		open.TextSize = 14.000
+
+		minimized_2.Name = "minimized"
+		minimized_2.Parent = minimized
+		minimized_2.AnchorPoint = Vector2.new(0.5, 0.5)
+		minimized_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		minimized_2.BackgroundTransparency = 1.000
+		minimized_2.Position = UDim2.new(0.419516414, 0, 0.363590896, 0)
+		minimized_2.Size = UDim2.new(0, 135, 0, 71)
+		minimized_2.ZIndex = 98
+		minimized_2.Image = "rbxassetid://3570695787"
+		minimized_2.ImageColor3 = Color3.fromRGB(48, 48, 48)
+		minimized_2.ScaleType = Enum.ScaleType.Slice
+		minimized_2.SliceCenter = Rect.new(100, 100, 100, 100)
+		minimized_2.SliceScale = 0.040
+
+		confirm.Name = "confirm"
+		confirm.Parent = EXHIBITION
+		confirm.AnchorPoint = Vector2.new(0.5, 0.5)
+		confirm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		confirm.BackgroundTransparency = 1.000
+		confirm.Position = UDim2.new(0.5, 0, 0.5, 0)
+		confirm.Size = UDim2.new(0, 233, 0, 149)
+		confirm.Visible = false
+		confirm.ZIndex = 200
+		confirm.Image = "rbxassetid://3570695787"
+		confirm.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		confirm.ScaleType = Enum.ScaleType.Slice
+		confirm.SliceCenter = Rect.new(100, 100, 100, 100)
+		confirm.SliceScale = 0.040
+
+		TextLabel_2.Parent = confirm
+		TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.BackgroundTransparency = 1.000
+		TextLabel_2.Position = UDim2.new(0.0686695278, 0, 0.228187919, 0)
+		TextLabel_2.Size = UDim2.new(0, 200, 0, 33)
+		TextLabel_2.ZIndex = 200
+		TextLabel_2.Font = Enum.Font.FredokaOne
+		TextLabel_2.Text = "Are you sure you would like to self destruct?"
+		TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_2.TextScaled = true
+		TextLabel_2.TextSize = 18.000
+		TextLabel_2.TextWrapped = true
+
+		yesxx.Name = "yesxx"
+		yesxx.Parent = confirm
+		yesxx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		yesxx.BackgroundTransparency = 1.000
+		yesxx.Position = UDim2.new(0.0686695278, 0, 0.617449701, 0)
+		yesxx.Size = UDim2.new(0, 87, 0, 48)
+		yesxx.ZIndex = 200
+		yesxx.Font = Enum.Font.FredokaOne
+		yesxx.Text = "Yes"
+		yesxx.TextColor3 = Color3.fromRGB(17, 170, 0)
+		yesxx.TextSize = 19.000
+
+		yesxx_2.Name = "yesxx"
+		yesxx_2.Parent = confirm
+		yesxx_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		yesxx_2.BackgroundTransparency = 1.000
+		yesxx_2.Position = UDim2.new(0.553648055, 0, 0.617449701, 0)
+		yesxx_2.Size = UDim2.new(0, 87, 0, 48)
+		yesxx_2.ZIndex = 200
+		yesxx_2.Font = Enum.Font.FredokaOne
+		yesxx_2.Text = "No"
+		yesxx_2.TextColor3 = Color3.fromRGB(170, 0, 0)
+		yesxx_2.TextSize = 19.000
+
+		asdasd.Name = "asdasd"
+		asdasd.Parent = confirm
+		asdasd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		asdasd.BackgroundTransparency = 1.000
+		asdasd.Position = UDim2.new(-0.049882751, 0, -0.0664480329, 0)
+		asdasd.Size = UDim2.new(0, 230, 0, 144)
+		asdasd.ZIndex = 199
+		asdasd.Image = "rbxassetid://3570695787"
+		asdasd.ImageColor3 = Color3.fromRGB(53, 53, 53)
+		asdasd.ScaleType = Enum.ScaleType.Slice
+		asdasd.SliceCenter = Rect.new(100, 100, 100, 100)
+		asdasd.SliceScale = 0.040
+
+		Frame.Name = "Frame"
+		Frame.Parent = EXHIBITION
+		Frame.AnchorPoint = Vector2.new(0.5, 0.5)
+		Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Frame.BackgroundTransparency = 1.000
+		Frame.Position = UDim2.new(0.31400001, 0, 1.89999998, 0)
+		Frame.Size = UDim2.new(0, 459, 0, 270)
+		Frame.Image = "rbxassetid://3570695787"
+		Frame.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		Frame.ScaleType = Enum.ScaleType.Slice
+		Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+		Frame.SliceScale = 0.040
+
+		a.Name = "a"
+		a.Parent = Frame
+		a.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		a.BackgroundTransparency = 1.000
+		a.Position = UDim2.new(0.000197067755, 0, -0.0020478426, 0)
+		a.Size = UDim2.new(0, 459, 0, 51)
+		a.ZIndex = 2
+		a.Image = "rbxassetid://3570695787"
+		a.ImageColor3 = Color3.fromRGB(15, 15, 15)
+		a.ScaleType = Enum.ScaleType.Slice
+		a.SliceCenter = Rect.new(100, 100, 100, 100)
+		a.SliceScale = 0.040
+
+		a_2.Name = "a"
+		a_2.Parent = Frame
+		a_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		a_2.BackgroundTransparency = 1.000
+		a_2.Position = UDim2.new(-0.052287586, 0, 0, 0)
+		a_2.Size = UDim2.new(0, 200, 0, 50)
+		a_2.ZIndex = 3
+		a_2.Font = Enum.Font.FredokaOne
+		a_2.Text = "exhibition hub"
+		a_2.TextColor3 = Color3.fromRGB(216, 216, 216)
+		a_2.TextSize = 20.000
+
+		UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+		UIGradient_3.Parent = a_2
+
+		close.Name = "close"
+		close.Parent = Frame
+		close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		close.BackgroundTransparency = 1.000
+		close.Position = UDim2.new(0.917211354, 0, 0.0481481478, 0)
+		close.Size = UDim2.new(0, 24, 0, 24)
+		close.ZIndex = 4
+		close.Image = "rbxassetid://3570695787"
+		close.ImageColor3 = Color3.fromRGB(118, 0, 0)
+
+		Frame_2.Name = "Frame"
+		Frame_2.Parent = Frame
+		Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Frame_2.BackgroundTransparency = 1.000
+		Frame_2.Position = UDim2.new(-0.0281253718, 0, -0.0515177399, 0)
+		Frame_2.Size = UDim2.new(0, 457, 0, 270)
+		Frame_2.ZIndex = -1
+		Frame_2.Image = "rbxassetid://3570695787"
+		Frame_2.ImageColor3 = Color3.fromRGB(33, 33, 33)
+		Frame_2.ScaleType = Enum.ScaleType.Slice
+		Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+		Frame_2.SliceScale = 0.040
+
+		PlayerFrame.Name = "PlayerFrame"
+		PlayerFrame.Parent = Frame
+		PlayerFrame.Active = true
+		PlayerFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		PlayerFrame.BackgroundTransparency = 1.000
+		PlayerFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		PlayerFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		PlayerFrame.Size = UDim2.new(0, 274, 0, 199)
+		PlayerFrame.Visible = true
+		PlayerFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		PlayerFrame.ScrollBarThickness = 6
+
+		TextLabel_3.Parent = PlayerFrame
+		TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_3.BackgroundTransparency = 1.000
+		TextLabel_3.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_3.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_3.Font = Enum.Font.FredokaOne
+		TextLabel_3.Text = "Fly:"
+		TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_3.TextSize = 18.000
+		TextLabel_3.TextXAlignment = Enum.TextXAlignment.Left
+
+		flyfalse.Name = "flyfalse"
+		flyfalse.Parent = PlayerFrame
+		flyfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		flyfalse.BackgroundTransparency = 1.000
+		flyfalse.Position = UDim2.new(0.248175174, 0, 0, 0)
+		flyfalse.Size = UDim2.new(0, 76, 0, 50)
+		flyfalse.Font = Enum.Font.FredokaOne
+		flyfalse.Text = "False"
+		flyfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		flyfalse.TextSize = 18.000
+
+		flytrue.Name = "flytrue"
+		flytrue.Parent = PlayerFrame
+		flytrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		flytrue.BackgroundTransparency = 1.000
+		flytrue.Position = UDim2.new(0.248175174, 0, 0, 0)
+		flytrue.Size = UDim2.new(0, 76, 0, 50)
+		flytrue.Visible = false
+		flytrue.Font = Enum.Font.FredokaOne
+		flytrue.Text = "True"
+		flytrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		flytrue.TextSize = 18.000
+
+		TextLabel_4.Parent = PlayerFrame
+		TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_4.BackgroundTransparency = 1.000
+		TextLabel_4.Position = UDim2.new(0.0839416087, 0, 0.0456556492, 0)
+		TextLabel_4.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_4.Font = Enum.Font.FredokaOne
+		TextLabel_4.Text = "Mute Music:"
+		TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_4.TextSize = 18.000
+		TextLabel_4.TextXAlignment = Enum.TextXAlignment.Left
+
+		musicfalse.Name = "musicfalse"
+		musicfalse.Parent = PlayerFrame
+		musicfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		musicfalse.BackgroundTransparency = 1.000
+		musicfalse.Position = UDim2.new(0.492700726, 0, 0.0462962948, 0)
+		musicfalse.Size = UDim2.new(0, 76, 0, 50)
+		musicfalse.Font = Enum.Font.FredokaOne
+		musicfalse.Text = "False"
+		musicfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		musicfalse.TextSize = 18.000
+
+		musictrue.Name = "musictrue"
+		musictrue.Parent = PlayerFrame
+		musictrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		musictrue.BackgroundTransparency = 1.000
+		musictrue.Position = UDim2.new(0.492700726, 0, 0.0462962948, 0)
+		musictrue.Size = UDim2.new(0, 76, 0, 50)
+		musictrue.Visible = false
+		musictrue.Font = Enum.Font.FredokaOne
+		musictrue.Text = "True"
+		musictrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		musictrue.TextSize = 18.000
+
+		TextLabel_5.Parent = PlayerFrame
+		TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_5.BackgroundTransparency = 1.000
+		TextLabel_5.Position = UDim2.new(0.0839416087, 0, 0.187322333, 0)
+		TextLabel_5.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_5.Font = Enum.Font.FredokaOne
+		TextLabel_5.Text = "Disable Trades:"
+		TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_5.TextSize = 18.000
+		TextLabel_5.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_6.Parent = PlayerFrame
+		TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_6.BackgroundTransparency = 1.000
+		TextLabel_6.Position = UDim2.new(0.0839416087, 0, 0.0938037932, 0)
+		TextLabel_6.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_6.Font = Enum.Font.FredokaOne
+		TextLabel_6.Text = "WalkSpeed:"
+		TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_6.TextSize = 18.000
+		TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_7.Parent = PlayerFrame
+		TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_7.BackgroundTransparency = 1.000
+		TextLabel_7.Position = UDim2.new(0.0839416087, 0, 0.140100092, 0)
+		TextLabel_7.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_7.Font = Enum.Font.FredokaOne
+		TextLabel_7.Text = "JumpPower:"
+		TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_7.TextSize = 18.000
+		TextLabel_7.TextXAlignment = Enum.TextXAlignment.Left
+
+		walkspeedx.Name = "walkspeedx"
+		walkspeedx.Parent = PlayerFrame
+		walkspeedx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		walkspeedx.BackgroundTransparency = 1.000
+		walkspeedx.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		walkspeedx.Position = UDim2.new(0.525547445, 0, 0.0977036953, 0)
+		walkspeedx.Size = UDim2.new(0, 45, 0, 42)
+		walkspeedx.Font = Enum.Font.FredokaOne
+		walkspeedx.Text = "16"
+		walkspeedx.TextColor3 = Color3.fromRGB(148, 148, 148)
+		walkspeedx.TextSize = 18.000
+
+		jumppowerx.Name = "jumppowerx"
+		jumppowerx.Parent = PlayerFrame
+		jumppowerx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		jumppowerx.BackgroundTransparency = 1.000
+		jumppowerx.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		jumppowerx.Position = UDim2.new(0.525547445, 0, 0.146703705, 0)
+		jumppowerx.Size = UDim2.new(0, 58, 0, 35)
+		jumppowerx.Font = Enum.Font.FredokaOne
+		jumppowerx.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+		jumppowerx.Text = "50"
+		jumppowerx.TextColor3 = Color3.fromRGB(148, 148, 148)
+		jumppowerx.TextSize = 18.000
+
+		tradesfalse.Name = "tradesfalse"
+		tradesfalse.Parent = PlayerFrame
+		tradesfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		tradesfalse.BackgroundTransparency = 1.000
+		tradesfalse.Position = UDim2.new(0.529, 0,0.187, 0)
+		tradesfalse.Size = UDim2.new(0, 76, 0, 50)
+		tradesfalse.Font = Enum.Font.FredokaOne
+		tradesfalse.Text = "False"
+		tradesfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		tradesfalse.TextSize = 18.000
+
+		tradestrue.Name = "tradestrue"
+		tradestrue.Parent = PlayerFrame
+		tradestrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		tradestrue.BackgroundTransparency = 1.000
+		tradestrue.Position = UDim2.new(0.529, 0,0.187, 0)
+		tradestrue.Size = UDim2.new(0, 76, 0, 50)
+		tradestrue.Visible = false
+		tradestrue.Font = Enum.Font.FredokaOne
+		tradestrue.Text = "True"
+		tradestrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		tradestrue.TextSize = 18.000
+
+		a_3.Name = "a"
+		a_3.Parent = Frame
+		a_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		a_3.BackgroundTransparency = 1.000
+		a_3.Position = UDim2.new(0.383442283, 0, 0, 0)
+		a_3.Size = UDim2.new(0, 200, 0, 50)
+		a_3.ZIndex = 3
+		a_3.Font = Enum.Font.SourceSansItalic
+		a_3.Text = "x100 clicks 🎉clicker madness!😈"
+		a_3.TextColor3 = Color3.fromRGB(67, 67, 67)
+		a_3.TextSize = 20.000
+
+		AutofarmFrame.Name = "AutofarmFrame"
+		AutofarmFrame.Parent = Frame
+		AutofarmFrame.Active = true
+		AutofarmFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		AutofarmFrame.BackgroundTransparency = 1.000
+		AutofarmFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		AutofarmFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		AutofarmFrame.Size = UDim2.new(0, 274, 0, 199)
+		AutofarmFrame.Visible = false
+		AutofarmFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		AutofarmFrame.ScrollBarThickness = 6
+
+		clicktrue.Name = "clicktrue"
+		clicktrue.Parent = AutofarmFrame
+		clicktrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		clicktrue.BackgroundTransparency = 1.000
+		clicktrue.Position = UDim2.new(0.386861295, 0, -0.000925926026, 0)
+		clicktrue.Size = UDim2.new(0, 76, 0, 50)
+		clicktrue.Visible = false
+		clicktrue.Font = Enum.Font.FredokaOne
+		clicktrue.Text = "True"
+		clicktrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		clicktrue.TextSize = 18.000
+
+		clickfalse.Name = "clickfalse"
+		clickfalse.Parent = AutofarmFrame
+		clickfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		clickfalse.BackgroundTransparency = 1.000
+		clickfalse.Position = UDim2.new(0.386861295, 0, -0.000925926026, 0)
+		clickfalse.Size = UDim2.new(0, 76, 0, 50)
+		clickfalse.Font = Enum.Font.FredokaOne
+		clickfalse.Text = "False"
+		clickfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		clickfalse.TextSize = 18.000
+
+		TextLabel_9.Parent = AutofarmFrame
+		TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_9.BackgroundTransparency = 1.000
+		TextLabel_9.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_9.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_9.Font = Enum.Font.FredokaOne
+		TextLabel_9.Text = "Autofarm:"
+		TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_9.TextSize = 18.000
+		TextLabel_9.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_10.Parent = AutofarmFrame
+		TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_10.BackgroundTransparency = 1.000
+		TextLabel_10.Position = UDim2.new(0.0839416087, 0, 0.0456556529, 0)
+		TextLabel_10.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_10.Font = Enum.Font.FredokaOne
+		TextLabel_10.Text = "Clicks:"
+		TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_10.TextSize = 18.000
+		TextLabel_10.TextXAlignment = Enum.TextXAlignment.Left
+
+		clickcounterx.Name = "clickcounterx"
+		clickcounterx.Parent = AutofarmFrame
+		clickcounterx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		clickcounterx.BackgroundTransparency = 1.000
+		clickcounterx.Position = UDim2.new(0.357664227, 0, 0.0447297283, 0)
+		clickcounterx.Size = UDim2.new(0, 30, 0, 50)
+		clickcounterx.Font = Enum.Font.FredokaOne
+		clickcounterx.Text = "..."
+		clickcounterx.TextColor3 = Color3.fromRGB(175, 175, 175)
+		clickcounterx.TextSize = 18.000
+		clickcounterx.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_11.Parent = AutofarmFrame
+		TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_11.BackgroundTransparency = 1.000
+		TextLabel_11.Position = UDim2.new(0.0839416087, 0, 0.0928778723, 0)
+		TextLabel_11.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_11.Font = Enum.Font.FredokaOne
+		TextLabel_11.Text = "AutoRebirth:"
+		TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_11.TextSize = 18.000
+		TextLabel_11.TextXAlignment = Enum.TextXAlignment.Left
+
+		rebirthfalse.Name = "rebirthfalse"
+		rebirthfalse.Parent = AutofarmFrame
+		rebirthfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		rebirthfalse.BackgroundTransparency = 1.000
+		rebirthfalse.Position = UDim2.new(0.492700756, 0, 0.092592597, 0)
+		rebirthfalse.Size = UDim2.new(0, 76, 0, 50)
+		rebirthfalse.Font = Enum.Font.FredokaOne
+		rebirthfalse.Text = "False"
+		rebirthfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		rebirthfalse.TextSize = 18.000
+
+		rebirthtrue.Name = "rebirthtrue"
+		rebirthtrue.Parent = AutofarmFrame
+		rebirthtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		rebirthtrue.BackgroundTransparency = 1.000
+		rebirthtrue.Position = UDim2.new(0.492700756, 0, 0.092592597, 0)
+		rebirthtrue.Size = UDim2.new(0, 76, 0, 50)
+		rebirthtrue.Visible = false
+		rebirthtrue.Font = Enum.Font.FredokaOne
+		rebirthtrue.Text = "True"
+		rebirthtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		rebirthtrue.TextSize = 18.000
+
+		TextLabel_12.Parent = AutofarmFrame
+		TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_12.BackgroundTransparency = 1.000
+		TextLabel_12.Position = UDim2.new(0.0839416087, 0, 0.234544545, 0)
+		TextLabel_12.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_12.Font = Enum.Font.FredokaOne
+		TextLabel_12.Text = "Gems Now:"
+		TextLabel_12.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_12.TextSize = 18.000
+		TextLabel_12.TextXAlignment = Enum.TextXAlignment.Left
+
+		gemsnowx.Name = "gemsnowx"
+		gemsnowx.Parent = AutofarmFrame
+		gemsnowx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		gemsnowx.BackgroundTransparency = 1.000
+		gemsnowx.Position = UDim2.new(0.470802963, 0, 0.234544545, 0)
+		gemsnowx.Size = UDim2.new(0, 30, 0, 50)
+		gemsnowx.Font = Enum.Font.FredokaOne
+		gemsnowx.Text = "..."
+		gemsnowx.TextColor3 = Color3.fromRGB(175, 175, 175)
+		gemsnowx.TextSize = 18.000
+		gemsnowx.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_13.Parent = AutofarmFrame
+		TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_13.BackgroundTransparency = 1.000
+		TextLabel_13.Position = UDim2.new(0.0839416087, 0, 0.188248247, 0)
+		TextLabel_13.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_13.Font = Enum.Font.FredokaOne
+		TextLabel_13.Text = "Gems Before:"
+		TextLabel_13.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_13.TextSize = 18.000
+		TextLabel_13.TextXAlignment = Enum.TextXAlignment.Left
+
+		gemsbeforex.Name = "gemsbeforex"
+		gemsbeforex.Parent = AutofarmFrame
+		gemsbeforex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		gemsbeforex.BackgroundTransparency = 1.000
+		gemsbeforex.Position = UDim2.new(0.514598548, 0, 0.188248247, 0)
+		gemsbeforex.Size = UDim2.new(0, 30, 0, 50)
+		gemsbeforex.Font = Enum.Font.FredokaOne
+		gemsbeforex.Text = "..."
+		gemsbeforex.TextColor3 = Color3.fromRGB(175, 175, 175)
+		gemsbeforex.TextSize = 18.000
+		gemsbeforex.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_14.Parent = AutofarmFrame
+		TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_14.BackgroundTransparency = 1.000
+		TextLabel_14.Position = UDim2.new(0.0839416087, 0, 0.141951948, 0)
+		TextLabel_14.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_14.Font = Enum.Font.FredokaOne
+		TextLabel_14.Text = "Rebirth Amount:"
+		TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_14.TextSize = 18.000
+		TextLabel_14.TextXAlignment = Enum.TextXAlignment.Left
+
+		rebirthamountx.Name = "rebirthamountx"
+		rebirthamountx.Parent = AutofarmFrame
+		rebirthamountx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		rebirthamountx.BackgroundTransparency = 1.000
+		rebirthamountx.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		rebirthamountx.Position = UDim2.new(0.689999998, -29, 0.170000002, -22)
+		rebirthamountx.Size = UDim2.new(0, 58, 0, 35)
+		rebirthamountx.Font = Enum.Font.FredokaOne
+		rebirthamountx.PlaceholderColor3 = Color3.fromRGB(178, 178, 178)
+		rebirthamountx.Text = "100"
+		rebirthamountx.TextColor3 = Color3.fromRGB(148, 148, 148)
+		rebirthamountx.TextSize = 18.000
+		rebirthamountx.TextXAlignment = Enum.TextXAlignment.Left
+
+		AutoBuyFrame.Name = "AutoBuyFrame"
+		AutoBuyFrame.Parent = Frame
+		AutoBuyFrame.Active = true
+		AutoBuyFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		AutoBuyFrame.BackgroundTransparency = 1.000
+		AutoBuyFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		AutoBuyFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		AutoBuyFrame.Size = UDim2.new(0, 274, 0, 199)
+		AutoBuyFrame.Visible = false
+		AutoBuyFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		AutoBuyFrame.ScrollBarThickness = 6
+
+		TextLabel_15.Parent = AutoBuyFrame
+		TextLabel_15.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_15.BackgroundTransparency = 1.000
+		TextLabel_15.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_15.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_15.Font = Enum.Font.FredokaOne
+		TextLabel_15.Text = "Buy Egg:"
+		TextLabel_15.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_15.TextSize = 18.000
+		TextLabel_15.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_16.Parent = AutoBuyFrame
+		TextLabel_16.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_16.BackgroundTransparency = 1.000
+		TextLabel_16.Position = UDim2.new(0.0839416087, 0, 0.0447297283, 0)
+		TextLabel_16.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_16.Font = Enum.Font.FredokaOne
+		TextLabel_16.Text = "Selected Egg:"
+		TextLabel_16.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_16.TextSize = 18.000
+		TextLabel_16.TextXAlignment = Enum.TextXAlignment.Left
+
+		eggtrue.Name = "eggtrue"
+		eggtrue.Parent = AutoBuyFrame
+		eggtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		eggtrue.BackgroundTransparency = 1.000
+		eggtrue.Position = UDim2.new(0.357664227, 0, -0.00092592591, 0)
+		eggtrue.Size = UDim2.new(0, 76, 0, 50)
+		eggtrue.Visible = false
+		eggtrue.Font = Enum.Font.FredokaOne
+		eggtrue.Text = "True"
+		eggtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		eggtrue.TextSize = 18.000
+
+		eggpricex.Name = "eggpricex"
+		eggpricex.Parent = AutoBuyFrame
+		eggpricex.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		eggpricex.BackgroundTransparency = 1.000
+		eggpricex.Position = UDim2.new(0.394160569, 0, 0.130840838, 0)
+		eggpricex.Size = UDim2.new(0, 30, 0, 50)
+		eggpricex.Font = Enum.Font.FredokaOne
+		eggpricex.Text = "5K Gems"
+		eggpricex.TextColor3 = Color3.fromRGB(148, 148, 148)
+		eggpricex.TextSize = 18.000
+		eggpricex.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_17.Parent = AutoBuyFrame
+		TextLabel_17.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_17.BackgroundTransparency = 1.000
+		TextLabel_17.Position = UDim2.new(0.0839416087, 0, 0.130840838, 0)
+		TextLabel_17.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_17.Font = Enum.Font.FredokaOne
+		TextLabel_17.Text = "Egg Price:"
+		TextLabel_17.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_17.TextSize = 18.000
+		TextLabel_17.TextXAlignment = Enum.TextXAlignment.Left
+
+		selectedegg.Name = "selectedegg"
+		selectedegg.Parent = AutoBuyFrame
+		selectedegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		selectedegg.BackgroundTransparency = 1.000
+		selectedegg.Position = UDim2.new(0.525547445, 0, 0.0447297283, 0)
+		selectedegg.Size = UDim2.new(0, 30, 0, 50)
+		selectedegg.Font = Enum.Font.FredokaOne
+		selectedegg.Text = "Basic Egg"
+		selectedegg.TextColor3 = Color3.fromRGB(148, 148, 148)
+		selectedegg.TextSize = 18.000
+		selectedegg.TextXAlignment = Enum.TextXAlignment.Left
+
+		eggfalse.Name = "eggfalse"
+		eggfalse.Parent = AutoBuyFrame
+		eggfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		eggfalse.BackgroundTransparency = 1.000
+		eggfalse.Position = UDim2.new(0.357664227, 0, -0.00092592591, 0)
+		eggfalse.Size = UDim2.new(0, 76, 0, 50)
+		eggfalse.Font = Enum.Font.FredokaOne
+		eggfalse.Text = "False"
+		eggfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		eggfalse.TextSize = 18.000
+
+		changeselectedegg.Name = "changeselectedegg"
+		changeselectedegg.Parent = AutoBuyFrame
+		changeselectedegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changeselectedegg.BackgroundTransparency = 1.000
+		changeselectedegg.Position = UDim2.new(0.0839416459, 0, 0.0851851851, 0)
+		changeselectedegg.Size = UDim2.new(0, 76, 0, 50)
+		changeselectedegg.Font = Enum.Font.FredokaOne
+		changeselectedegg.Text = "Change"
+		changeselectedegg.TextColor3 = Color3.fromRGB(163, 0, 0)
+		changeselectedegg.TextSize = 18.000
+		changeselectedegg.TextXAlignment = Enum.TextXAlignment.Left
+
+		otherframe2.Name = "otherframe2"
+		otherframe2.Parent = Frame
+		otherframe2.Active = true
+		otherframe2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		otherframe2.BackgroundTransparency = 1.000
+		otherframe2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		otherframe2.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		otherframe2.Size = UDim2.new(0, 274, 0, 199)
+		otherframe2.Visible = false
+		otherframe2.CanvasSize = UDim2.new(0, 0, 4, 0)
+		otherframe2.ScrollBarThickness = 6
+
+		advertisetrue.Name = "advertisetrue"
+		advertisetrue.Parent = otherframe2
+		advertisetrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		advertisetrue.BackgroundTransparency = 1.000
+		advertisetrue.Position = UDim2.new(0.587591231, 0, -0.000925926957, 0)
+		advertisetrue.Size = UDim2.new(0, 76, 0, 50)
+		advertisetrue.Visible = false
+		advertisetrue.Font = Enum.Font.FredokaOne
+		advertisetrue.Text = "True"
+		advertisetrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		advertisetrue.TextSize = 18.000
+
+		TextLabel_18.Parent = otherframe2
+		TextLabel_18.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_18.BackgroundTransparency = 1.000
+		TextLabel_18.Position = UDim2.new(0.0839416087, 0, -0.000640647952, 0)
+		TextLabel_18.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_18.Font = Enum.Font.FredokaOne
+		TextLabel_18.Text = "Auto-Advertise:"
+		TextLabel_18.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_18.TextSize = 18.000
+		TextLabel_18.TextXAlignment = Enum.TextXAlignment.Left
+
+		advertisefalse.Name = "advertisefalse"
+		advertisefalse.Parent = otherframe2
+		advertisefalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		advertisefalse.BackgroundTransparency = 1.000
+		advertisefalse.Position = UDim2.new(0.587591231, 0, -0.000925926957, 0)
+		advertisefalse.Size = UDim2.new(0, 76, 0, 50)
+		advertisefalse.Font = Enum.Font.FredokaOne
+		advertisefalse.Text = "False"
+		advertisefalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		advertisefalse.TextSize = 18.000
+
+		TextLabel_19.Parent = otherframe2
+		TextLabel_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_19.BackgroundTransparency = 1.000
+		TextLabel_19.Position = UDim2.new(0.0839416087, 0, 0.0678778738, 0)
+		TextLabel_19.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_19.Font = Enum.Font.FredokaOne
+		TextLabel_19.Text = "FREE ROBUX 😱:"
+		TextLabel_19.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_19.TextSize = 18.000
+		TextLabel_19.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_20.Parent = otherframe2
+		TextLabel_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_20.BackgroundTransparency = 1.000
+		TextLabel_20.Position = UDim2.new(0.0839416087, 0, 0.0215815753, 0)
+		TextLabel_20.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_20.Font = Enum.Font.FredokaOne
+		TextLabel_20.Text = "Advertise a free script will ya x ;)"
+		TextLabel_20.TextColor3 = Color3.fromRGB(56, 56, 56)
+		TextLabel_20.TextSize = 13.000
+		TextLabel_20.TextXAlignment = Enum.TextXAlignment.Left
+
+		freerobux.Name = "freerobux"
+		freerobux.Parent = otherframe2
+		freerobux.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		freerobux.BackgroundTransparency = 1.000
+		freerobux.Position = UDim2.new(0.572992623, 0, 0.0675925761, 0)
+		freerobux.Size = UDim2.new(0, 76, 0, 50)
+		freerobux.Font = Enum.Font.FredokaOne
+		freerobux.Text = "Click"
+		freerobux.TextColor3 = Color3.fromRGB(163, 0, 0)
+		freerobux.TextSize = 18.000
+
+		SettingsFrame.Name = "SettingsFrame"
+		SettingsFrame.Parent = Frame
+		SettingsFrame.Active = true
+		SettingsFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		SettingsFrame.BackgroundTransparency = 1.000
+		SettingsFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		SettingsFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		SettingsFrame.Size = UDim2.new(0, 274, 0, 199)
+		SettingsFrame.Visible = false
+		SettingsFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		SettingsFrame.ScrollBarThickness = 6
+
+		TextLabel_21.Parent = SettingsFrame
+		TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_21.BackgroundTransparency = 1.000
+		TextLabel_21.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_21.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_21.Font = Enum.Font.FredokaOne
+		TextLabel_21.Text = "UI Shadow:"
+		TextLabel_21.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_21.TextSize = 18.000
+		TextLabel_21.TextXAlignment = Enum.TextXAlignment.Left
+
+		shadowfalse.Name = "shadowfalse"
+		shadowfalse.Parent = SettingsFrame
+		shadowfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		shadowfalse.BackgroundTransparency = 1.000
+		shadowfalse.Position = UDim2.new(0.470802903, 0, -0.00092592591, 0)
+		shadowfalse.Size = UDim2.new(0, 76, 0, 50)
+		shadowfalse.Visible = false
+		shadowfalse.Font = Enum.Font.FredokaOne
+		shadowfalse.Text = "False"
+		shadowfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		shadowfalse.TextSize = 18.000
+
+		shadowtrue.Name = "shadowtrue"
+		shadowtrue.Parent = SettingsFrame
+		shadowtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		shadowtrue.BackgroundTransparency = 1.000
+		shadowtrue.Position = UDim2.new(0.470802903, 0, -0.00092592591, 0)
+		shadowtrue.Size = UDim2.new(0, 76, 0, 50)
+		shadowtrue.Font = Enum.Font.FredokaOne
+		shadowtrue.Text = "True"
+		shadowtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		shadowtrue.TextSize = 18.000
+
+		TextLabel_22.Parent = SettingsFrame
+		TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_22.BackgroundTransparency = 1.000
+		TextLabel_22.Position = UDim2.new(0.0839416087, 0, 0.0475075021, 0)
+		TextLabel_22.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_22.Font = Enum.Font.FredokaOne
+		TextLabel_22.Text = "Self Destruct"
+		TextLabel_22.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_22.TextSize = 18.000
+		TextLabel_22.TextXAlignment = Enum.TextXAlignment.Left
+
+		selfdestruct.Name = "selfdestruct"
+		selfdestruct.Parent = SettingsFrame
+		selfdestruct.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		selfdestruct.BackgroundTransparency = 1.000
+		selfdestruct.Position = UDim2.new(0.485401452, 0, 0.0475060716, 0)
+		selfdestruct.Size = UDim2.new(0, 72, 0, 50)
+		selfdestruct.Font = Enum.Font.FredokaOne
+		selfdestruct.Text = "Click"
+		selfdestruct.TextColor3 = Color3.fromRGB(163, 0, 0)
+		selfdestruct.TextSize = 18.000
+
+		TextLabel_23.Parent = SettingsFrame
+		TextLabel_23.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_23.BackgroundTransparency = 1.000
+		TextLabel_23.Position = UDim2.new(0.0839416087, 0, 0.0938037932, 0)
+		TextLabel_23.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_23.Font = Enum.Font.FredokaOne
+		TextLabel_23.Text = "Current Version:"
+		TextLabel_23.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_23.TextSize = 18.000
+		TextLabel_23.TextXAlignment = Enum.TextXAlignment.Left
+
+		vers_2.Name = "vers"
+		vers_2.Parent = SettingsFrame
+		vers_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		vers_2.BackgroundTransparency = 1.000
+		vers_2.Position = UDim2.new(0.613138616, 0, 0.0938037932, 0)
+		vers_2.Size = UDim2.new(0, 30, 0, 50)
+		vers_2.Font = Enum.Font.FredokaOne
+		vers_2.Text = "b0.01"
+		vers_2.TextColor3 = Color3.fromRGB(178, 178, 178)
+		vers_2.TextSize = 18.000
+		vers_2.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_24.Parent = SettingsFrame
+		TextLabel_24.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_24.BackgroundTransparency = 1.000
+		TextLabel_24.Position = UDim2.new(0.0839416087, 0, 0.140100092, 0)
+		TextLabel_24.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_24.Font = Enum.Font.FredokaOne
+		TextLabel_24.Text = "Last Updated:"
+		TextLabel_24.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_24.TextSize = 18.000
+		TextLabel_24.TextXAlignment = Enum.TextXAlignment.Left
+
+		lastupdat.Name = "lastupdat"
+		lastupdat.Parent = SettingsFrame
+		lastupdat.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		lastupdat.BackgroundTransparency = 1.000
+		lastupdat.Position = UDim2.new(0.532846689, 0, 0.140100092, 0)
+		lastupdat.Size = UDim2.new(0, 30, 0, 50)
+		lastupdat.Font = Enum.Font.FredokaOne
+		lastupdat.Text = "?"
+		lastupdat.TextColor3 = Color3.fromRGB(178, 178, 178)
+		lastupdat.TextSize = 18.000
+		lastupdat.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_25.Parent = SettingsFrame
+		TextLabel_25.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_25.BackgroundTransparency = 1.000
+		TextLabel_25.Position = UDim2.new(0.0839416087, 0, 0.18639639, 0)
+		TextLabel_25.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_25.Font = Enum.Font.FredokaOne
+		TextLabel_25.Text = "Creator:"
+		TextLabel_25.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_25.TextSize = 18.000
+		TextLabel_25.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_26.Parent = SettingsFrame
+		TextLabel_26.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_26.BackgroundTransparency = 1.000
+		TextLabel_26.Position = UDim2.new(0.397810191, 0, 0.18639639, 0)
+		TextLabel_26.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_26.Font = Enum.Font.FredokaOne
+		TextLabel_26.Text = "miss ayat#6834"
+		TextLabel_26.TextColor3 = Color3.fromRGB(178, 178, 178)
+		TextLabel_26.TextSize = 18.000
+		TextLabel_26.TextXAlignment = Enum.TextXAlignment.Left
+
+		damn.Name = "damn"
+		damn.Parent = Frame
+		damn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		damn.BackgroundTransparency = 1.000
+		damn.Position = UDim2.new(-0.505068183, 0, -0.603848279, 0)
+		damn.Size = UDim2.new(0, 894, 0, 595)
+		damn.ZIndex = -2
+		damn.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		damn2.Name = "damn2"
+		damn2.Parent = Frame
+		damn2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		damn2.BackgroundTransparency = 1.000
+		damn2.Position = UDim2.new(-0.505068183, 0, -0.603848279, 0)
+		damn2.Size = UDim2.new(0, 894, 0, 595)
+		damn2.ZIndex = -2
+		damn2.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		CatergoryFrame.Name = "CatergoryFrame"
+		CatergoryFrame.Parent = Frame
+		CatergoryFrame.Active = true
+		CatergoryFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		CatergoryFrame.BackgroundTransparency = 1.000
+		CatergoryFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		CatergoryFrame.Position = UDim2.new(0.0370370373, 0, 0.233333334, 0)
+		CatergoryFrame.Size = UDim2.new(0, 141, 0, 198)
+		CatergoryFrame.ZIndex = 5
+		CatergoryFrame.ScrollBarThickness = 5
+
+		Player.Name = "Player"
+		Player.Parent = CatergoryFrame
+		Player.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Player.BackgroundTransparency = 1.000
+		Player.Position = UDim2.new(0.0997079611, 0, -0.0111110974, 0)
+		Player.Size = UDim2.new(0, 106, 0, 41)
+		Player.ZIndex = 5
+		Player.Font = Enum.Font.FredokaOne
+		Player.Text = "•    Player"
+		Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+		Player.TextSize = 14.000
+		Player.TextWrapped = true
+		Player.TextXAlignment = Enum.TextXAlignment.Left
+
+		Autofarm.Name = "Autofarm"
+		Autofarm.Parent = CatergoryFrame
+		Autofarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Autofarm.BackgroundTransparency = 1.000
+		Autofarm.Position = UDim2.new(0.0997079611, 0, 0.100000001, -20)
+		Autofarm.Size = UDim2.new(0, 106, 0, 41)
+		Autofarm.ZIndex = 5
+		Autofarm.Font = Enum.Font.FredokaOne
+		Autofarm.Text = "•    Autofarm"
+		Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Autofarm.TextSize = 14.000
+		Autofarm.TextWrapped = true
+		Autofarm.TextXAlignment = Enum.TextXAlignment.Left
+
+		Autobuyx.Name = "Autobuyx"
+		Autobuyx.Parent = CatergoryFrame
+		Autobuyx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Autobuyx.BackgroundTransparency = 1.000
+		Autobuyx.Position = UDim2.new(0.0997079611, 0, 0.170000002, -20)
+		Autobuyx.Size = UDim2.new(0, 106, 0, 41)
+		Autobuyx.ZIndex = 5
+		Autobuyx.Font = Enum.Font.FredokaOne
+		Autobuyx.Text = "•    AutoBuy"
+		Autobuyx.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Autobuyx.TextSize = 14.000
+		Autobuyx.TextWrapped = true
+		Autobuyx.TextXAlignment = Enum.TextXAlignment.Left
+
+		Funx.Name = "Funx"
+		Funx.Parent = CatergoryFrame
+		Funx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Funx.BackgroundTransparency = 1.000
+		Funx.Position = UDim2.new(0.0997079611, 0, 0.20740737, 0)
+		Funx.Size = UDim2.new(0, 106, 0, 41)
+		Funx.ZIndex = 5
+		Funx.Font = Enum.Font.FredokaOne
+		Funx.Text = "•    Other"
+		Funx.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Funx.TextSize = 14.000
+		Funx.TextWrapped = true
+		Funx.TextXAlignment = Enum.TextXAlignment.Left
+
+		Teleportx.Name = "Teleportx"
+		Teleportx.Parent = CatergoryFrame
+		Teleportx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Teleportx.BackgroundTransparency = 1.000
+		Teleportx.Position = UDim2.new(0.0997079611, 0, 0.318148136, -20)
+		Teleportx.Size = UDim2.new(0, 106, 0, 41)
+		Teleportx.ZIndex = 5
+		Teleportx.Font = Enum.Font.FredokaOne
+		Teleportx.Text = "•    Teleport"
+		Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Teleportx.TextSize = 14.000
+		Teleportx.TextWrapped = true
+		Teleportx.TextXAlignment = Enum.TextXAlignment.Left
+
+		Serverx.Name = "Serverx"
+		Serverx.Parent = CatergoryFrame
+		Serverx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Serverx.BackgroundTransparency = 1.000
+		Serverx.Position = UDim2.new(0.0997079611, 0, 0.355555505, 0)
+		Serverx.Size = UDim2.new(0, 106, 0, 41)
+		Serverx.ZIndex = 5
+		Serverx.Font = Enum.Font.FredokaOne
+		Serverx.Text = "•    Server"
+		Serverx.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Serverx.TextSize = 14.000
+		Serverx.TextWrapped = true
+		Serverx.TextXAlignment = Enum.TextXAlignment.Left
+
+		Settingsx.Name = "Settingsx"
+		Settingsx.Parent = CatergoryFrame
+		Settingsx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Settingsx.BackgroundTransparency = 1.000
+		Settingsx.Position = UDim2.new(0.0997079611, 0, 0.431777805, -2)
+		Settingsx.Size = UDim2.new(0, 106, 0, 41)
+		Settingsx.ZIndex = 5
+		Settingsx.Font = Enum.Font.FredokaOne
+		Settingsx.Text = "•    Settings"
+		Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+		Settingsx.TextSize = 14.000
+		Settingsx.TextWrapped = true
+		Settingsx.TextXAlignment = Enum.TextXAlignment.Left
+
+		ImageLabel.Parent = Frame
+		ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ImageLabel.BackgroundTransparency = 1.000
+		ImageLabel.Position = UDim2.new(0.0729848146, 0, 0.535185158, 0)
+		ImageLabel.Rotation = -90.000
+		ImageLabel.Size = UDim2.new(0, 100, 0, 137)
+		ImageLabel.ZIndex = 3
+		ImageLabel.Image = "http://www.roblox.com/asset/?id=10099621336"
+
+		TeleportFrame.Name = "TeleportFrame"
+		TeleportFrame.Parent = Frame
+		TeleportFrame.Active = true
+		TeleportFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TeleportFrame.BackgroundTransparency = 1.000
+		TeleportFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		TeleportFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		TeleportFrame.Size = UDim2.new(0, 274, 0, 199)
+		TeleportFrame.Visible = false
+		TeleportFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		TeleportFrame.ScrollBarThickness = 6
+
+		TextLabel_27.Parent = TeleportFrame
+		TextLabel_27.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_27.BackgroundTransparency = 1.000
+		TextLabel_27.Position = UDim2.new(0.0839416087, 0, -0.000640644459, 0)
+		TextLabel_27.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_27.Font = Enum.Font.FredokaOne
+		TextLabel_27.Text = "Teleport Tool:"
+		TextLabel_27.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_27.TextSize = 18.000
+		TextLabel_27.TextXAlignment = Enum.TextXAlignment.Left
+
+		tptool.Name = "tptool"
+		tptool.Parent = TeleportFrame
+		tptool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		tptool.BackgroundTransparency = 1.000
+		tptool.Position = UDim2.new(0.514598548, 0, -0.000642091036, 0)
+		tptool.Size = UDim2.new(0, 72, 0, 50)
+		tptool.Font = Enum.Font.FredokaOne
+		tptool.Text = "Click"
+		tptool.TextColor3 = Color3.fromRGB(163, 0, 0)
+		tptool.TextSize = 18.000
+
+		TextLabel_28.Parent = TeleportFrame
+		TextLabel_28.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_28.BackgroundTransparency = 1.000
+		TextLabel_28.Position = UDim2.new(0.0839416087, 0, 0.0456556492, 0)
+		TextLabel_28.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_28.Font = Enum.Font.FredokaOne
+		TextLabel_28.Text = "Spawn:"
+		TextLabel_28.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_28.TextSize = 18.000
+		TextLabel_28.TextXAlignment = Enum.TextXAlignment.Left
+
+		spawntp.Name = "spawntp"
+		spawntp.Parent = TeleportFrame
+		spawntp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		spawntp.BackgroundTransparency = 1.000
+		spawntp.Position = UDim2.new(0.31021896, 0, 0.0465801321, 0)
+		spawntp.Size = UDim2.new(0, 72, 0, 50)
+		spawntp.Font = Enum.Font.FredokaOne
+		spawntp.Text = "Click"
+		spawntp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		spawntp.TextSize = 18.000
+
+		TextLabel_29.Parent = TeleportFrame
+		TextLabel_29.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_29.BackgroundTransparency = 1.000
+		TextLabel_29.Position = UDim2.new(0.0839416087, 0, 0.0919519439, 0)
+		TextLabel_29.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_29.Font = Enum.Font.FredokaOne
+		TextLabel_29.Text = "Lava:"
+		TextLabel_29.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_29.TextSize = 18.000
+		TextLabel_29.TextXAlignment = Enum.TextXAlignment.Left
+
+		lavatp.Name = "lavatp"
+		lavatp.Parent = TeleportFrame
+		lavatp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		lavatp.BackgroundTransparency = 1.000
+		lavatp.Position = UDim2.new(0.277372211, 0, 0.0928764343, 0)
+		lavatp.Size = UDim2.new(0, 72, 0, 50)
+		lavatp.Font = Enum.Font.FredokaOne
+		lavatp.Text = "Click"
+		lavatp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		lavatp.TextSize = 18.000
+
+		TextLabel_30.Parent = TeleportFrame
+		TextLabel_30.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_30.BackgroundTransparency = 1.000
+		TextLabel_30.Position = UDim2.new(0.0839416087, 0, 0.138248235, 0)
+		TextLabel_30.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_30.Font = Enum.Font.FredokaOne
+		TextLabel_30.Text = "Desert:"
+		TextLabel_30.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_30.TextSize = 18.000
+		TextLabel_30.TextXAlignment = Enum.TextXAlignment.Left
+
+		deserttp.Name = "deserttp"
+		deserttp.Parent = TeleportFrame
+		deserttp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		deserttp.BackgroundTransparency = 1.000
+		deserttp.Position = UDim2.new(0.3102189, 0, 0.139172733, 0)
+		deserttp.Size = UDim2.new(0, 72, 0, 50)
+		deserttp.Font = Enum.Font.FredokaOne
+		deserttp.Text = "Click"
+		deserttp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		deserttp.TextSize = 18.000
+
+		TextLabel_31.Parent = TeleportFrame
+		TextLabel_31.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_31.BackgroundTransparency = 1.000
+		TextLabel_31.Position = UDim2.new(0.0839416087, 0, 0.18639639, 0)
+		TextLabel_31.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_31.Font = Enum.Font.FredokaOne
+		TextLabel_31.Text = "Ocean:"
+		TextLabel_31.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_31.TextSize = 18.000
+		TextLabel_31.TextXAlignment = Enum.TextXAlignment.Left
+
+		oceantp.Name = "oceantp"
+		oceantp.Parent = TeleportFrame
+		oceantp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		oceantp.BackgroundTransparency = 1.000
+		oceantp.Position = UDim2.new(0.288321078, 0, 0.188246816, 0)
+		oceantp.Size = UDim2.new(0, 72, 0, 50)
+		oceantp.Font = Enum.Font.FredokaOne
+		oceantp.Text = "Click"
+		oceantp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		oceantp.TextSize = 18.000
+
+		TextLabel_32.Parent = TeleportFrame
+		TextLabel_32.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_32.BackgroundTransparency = 1.000
+		TextLabel_32.Position = UDim2.new(0.0839416087, 0, 0.234544545, 0)
+		TextLabel_32.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_32.Font = Enum.Font.FredokaOne
+		TextLabel_32.Text = "Fire:"
+		TextLabel_32.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_32.TextSize = 18.000
+		TextLabel_32.TextXAlignment = Enum.TextXAlignment.Left
+
+		firetp.Name = "firetp"
+		firetp.Parent = TeleportFrame
+		firetp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		firetp.BackgroundTransparency = 1.000
+		firetp.Position = UDim2.new(0.229926914, 0, 0.235469028, 0)
+		firetp.Size = UDim2.new(0, 72, 0, 50)
+		firetp.Font = Enum.Font.FredokaOne
+		firetp.Text = "Click"
+		firetp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		firetp.TextSize = 18.000
+
+		TextLabel_33.Parent = TeleportFrame
+		TextLabel_33.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_33.BackgroundTransparency = 1.000
+		TextLabel_33.Position = UDim2.new(0.0839416087, 0, 0.281766772, 0)
+		TextLabel_33.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_33.Font = Enum.Font.FredokaOne
+		TextLabel_33.Text = "Moon:"
+		TextLabel_33.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_33.TextSize = 18.000
+		TextLabel_33.TextXAlignment = Enum.TextXAlignment.Left
+
+		moontp.Name = "moontp"
+		moontp.Parent = TeleportFrame
+		moontp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		moontp.BackgroundTransparency = 1.000
+		moontp.Position = UDim2.new(0.277372181, 0, 0.28269124, 0)
+		moontp.Size = UDim2.new(0, 72, 0, 50)
+		moontp.Font = Enum.Font.FredokaOne
+		moontp.Text = "Click"
+		moontp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		moontp.TextSize = 18.000
+
+		TextLabel_34.Parent = TeleportFrame
+		TextLabel_34.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_34.BackgroundTransparency = 1.000
+		TextLabel_34.Position = UDim2.new(0.0839416087, 0, 0.328063071, 0)
+		TextLabel_34.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_34.Font = Enum.Font.FredokaOne
+		TextLabel_34.Text = "City:"
+		TextLabel_34.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_34.TextSize = 18.000
+		TextLabel_34.TextXAlignment = Enum.TextXAlignment.Left
+
+		citytp.Name = "citytp"
+		citytp.Parent = TeleportFrame
+		citytp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		citytp.BackgroundTransparency = 1.000
+		citytp.Position = UDim2.new(0.251824707, 0, 0.32806161, 0)
+		citytp.Size = UDim2.new(0, 72, 0, 50)
+		citytp.Font = Enum.Font.FredokaOne
+		citytp.Text = "Click"
+		citytp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		citytp.TextSize = 18.000
+
+		TextLabel_35.Parent = TeleportFrame
+		TextLabel_35.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_35.BackgroundTransparency = 1.000
+		TextLabel_35.Position = UDim2.new(0.0839416087, 0, 0.374359369, 0)
+		TextLabel_35.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_35.Font = Enum.Font.FredokaOne
+		TextLabel_35.Text = "Future:"
+		TextLabel_35.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_35.TextSize = 18.000
+		TextLabel_35.TextXAlignment = Enum.TextXAlignment.Left
+
+		futuretp.Name = "futuretp"
+		futuretp.Parent = TeleportFrame
+		futuretp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		futuretp.BackgroundTransparency = 1.000
+		futuretp.Position = UDim2.new(0.310218871, 0, 0.374357909, 0)
+		futuretp.Size = UDim2.new(0, 72, 0, 50)
+		futuretp.Font = Enum.Font.FredokaOne
+		futuretp.Text = "Click"
+		futuretp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		futuretp.TextSize = 18.000
+
+		TextLabel_36.Parent = TeleportFrame
+		TextLabel_36.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_36.BackgroundTransparency = 1.000
+		TextLabel_36.Position = UDim2.new(0.0839416087, 0, 0.786396444, 0)
+		TextLabel_36.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_36.Font = Enum.Font.FredokaOne
+		TextLabel_36.Text = "Player:"
+		TextLabel_36.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_36.TextSize = 18.000
+		TextLabel_36.TextXAlignment = Enum.TextXAlignment.Left
+
+		targetnametp.Name = "targetnametp"
+		targetnametp.Parent = TeleportFrame
+		targetnametp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		targetnametp.BackgroundTransparency = 1.000
+		targetnametp.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		targetnametp.Position = UDim2.new(0.620000005, -79, 0.805740774, -10)
+		targetnametp.Size = UDim2.new(0, 158, 0, 32)
+		targetnametp.Font = Enum.Font.FredokaOne
+		targetnametp.Text = "--type name here--"
+		targetnametp.TextColor3 = Color3.fromRGB(178, 178, 178)
+		targetnametp.TextSize = 13.000
+		targetnametp.TextXAlignment = Enum.TextXAlignment.Left
+
+		playertp.Name = "playertp"
+		playertp.Parent = TeleportFrame
+		playertp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		playertp.BackgroundTransparency = 1.000
+		playertp.Position = UDim2.new(0.0182480738, 0, 0.827135742, 0)
+		playertp.Size = UDim2.new(0, 72, 0, 50)
+		playertp.Font = Enum.Font.FredokaOne
+		playertp.Text = "Click"
+		playertp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		playertp.TextSize = 18.000
+
+		TextLabel_37.Parent = TeleportFrame
+		TextLabel_37.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_37.BackgroundTransparency = 1.000
+		TextLabel_37.Position = UDim2.new(0.0839416087, 0, 0.417877883, 0)
+		TextLabel_37.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_37.Font = Enum.Font.FredokaOne
+		TextLabel_37.Text = "Infinity:"
+		TextLabel_37.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_37.TextSize = 18.000
+		TextLabel_37.TextXAlignment = Enum.TextXAlignment.Left
+
+		infitp.Name = "infitp"
+		infitp.Parent = TeleportFrame
+		infitp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		infitp.BackgroundTransparency = 1.000
+		infitp.Position = UDim2.new(0.328467041, 0, 0.419728279, 0)
+		infitp.Size = UDim2.new(0, 72, 0, 50)
+		infitp.Font = Enum.Font.FredokaOne
+		infitp.Text = "Click"
+		infitp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		infitp.TextSize = 18.000
+
+		TextLabel_38.Parent = TeleportFrame
+		TextLabel_38.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_38.BackgroundTransparency = 1.000
+		TextLabel_38.Position = UDim2.new(0.0839416087, 0, 0.46510011, 0)
+		TextLabel_38.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_38.Font = Enum.Font.FredokaOne
+		TextLabel_38.Text = "Dominus:"
+		TextLabel_38.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_38.TextSize = 18.000
+		TextLabel_38.TextXAlignment = Enum.TextXAlignment.Left
+
+		dominustp.Name = "dominustp"
+		dominustp.Parent = TeleportFrame
+		dominustp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dominustp.BackgroundTransparency = 1.000
+		dominustp.Position = UDim2.new(0.36131376, 0, 0.466024578, 0)
+		dominustp.Size = UDim2.new(0, 72, 0, 50)
+		dominustp.Font = Enum.Font.FredokaOne
+		dominustp.Text = "Click"
+		dominustp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		dominustp.TextSize = 18.000
+
+		TextLabel_39.Parent = TeleportFrame
+		TextLabel_39.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_39.BackgroundTransparency = 1.000
+		TextLabel_39.Position = UDim2.new(0.0839416087, 0, 0.51047051, 0)
+		TextLabel_39.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_39.Font = Enum.Font.FredokaOne
+		TextLabel_39.Text = "Space:"
+		TextLabel_39.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_39.TextSize = 18.000
+		TextLabel_39.TextXAlignment = Enum.TextXAlignment.Left
+
+		spacetp.Name = "spacetp"
+		spacetp.Parent = TeleportFrame
+		spacetp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		spacetp.BackgroundTransparency = 1.000
+		spacetp.Position = UDim2.new(0.310218871, 0, 0.511394978, 0)
+		spacetp.Size = UDim2.new(0, 72, 0, 50)
+		spacetp.Font = Enum.Font.FredokaOne
+		spacetp.Text = "Click"
+		spacetp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		spacetp.TextSize = 18.000
+
+		TextLabel_40.Parent = TeleportFrame
+		TextLabel_40.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_40.BackgroundTransparency = 1.000
+		TextLabel_40.Position = UDim2.new(0.0802919716, 0, 0.651211262, 0)
+		TextLabel_40.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_40.Font = Enum.Font.FredokaOne
+		TextLabel_40.Text = "Forest:"
+		TextLabel_40.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_40.TextSize = 18.000
+		TextLabel_40.TextXAlignment = Enum.TextXAlignment.Left
+
+		foresttp.Name = "foresttp"
+		foresttp.Parent = TeleportFrame
+		foresttp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		foresttp.BackgroundTransparency = 1.000
+		foresttp.Position = UDim2.new(0.306569248, 0, 0.65213573, 0)
+		foresttp.Size = UDim2.new(0, 72, 0, 50)
+		foresttp.Font = Enum.Font.FredokaOne
+		foresttp.Text = "Click"
+		foresttp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		foresttp.TextSize = 18.000
+
+		TextLabel_41.Parent = TeleportFrame
+		TextLabel_41.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_41.BackgroundTransparency = 1.000
+		TextLabel_41.Position = UDim2.new(0.0802919716, 0, 0.605840862, 0)
+		TextLabel_41.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_41.Font = Enum.Font.FredokaOne
+		TextLabel_41.Text = "Storm:"
+		TextLabel_41.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_41.TextSize = 18.000
+		TextLabel_41.TextXAlignment = Enum.TextXAlignment.Left
+
+		stormtp.Name = "stormtp"
+		stormtp.Parent = TeleportFrame
+		stormtp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		stormtp.BackgroundTransparency = 1.000
+		stormtp.Position = UDim2.new(0.288321078, 0, 0.60676533, 0)
+		stormtp.Size = UDim2.new(0, 72, 0, 50)
+		stormtp.Font = Enum.Font.FredokaOne
+		stormtp.Text = "Click"
+		stormtp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		stormtp.TextSize = 18.000
+
+		TextLabel_42.Parent = TeleportFrame
+		TextLabel_42.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_42.BackgroundTransparency = 1.000
+		TextLabel_42.Position = UDim2.new(0.0802919716, 0, 0.558618605, 0)
+		TextLabel_42.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_42.Font = Enum.Font.FredokaOne
+		TextLabel_42.Text = "Blocks:"
+		TextLabel_42.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_42.TextSize = 18.000
+		TextLabel_42.TextXAlignment = Enum.TextXAlignment.Left
+
+		blockstp.Name = "blockstp"
+		blockstp.Parent = TeleportFrame
+		blockstp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		blockstp.BackgroundTransparency = 1.000
+		blockstp.Position = UDim2.new(0.306569248, 0, 0.560469031, 0)
+		blockstp.Size = UDim2.new(0, 72, 0, 50)
+		blockstp.Font = Enum.Font.FredokaOne
+		blockstp.Text = "Click"
+		blockstp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		blockstp.TextSize = 18.000
+
+		TextLabel_43.Parent = TeleportFrame
+		TextLabel_43.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_43.BackgroundTransparency = 1.000
+		TextLabel_43.Position = UDim2.new(0.0839416087, 0, 0.74287796, 0)
+		TextLabel_43.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_43.Font = Enum.Font.FredokaOne
+		TextLabel_43.Text = "Toxic:"
+		TextLabel_43.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_43.TextSize = 18.000
+		TextLabel_43.TextXAlignment = Enum.TextXAlignment.Left
+
+		toxictp.Name = "toxictp"
+		toxictp.Parent = TeleportFrame
+		toxictp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		toxictp.BackgroundTransparency = 1.000
+		toxictp.Position = UDim2.new(0.277372152, 0, 0.743802428, 0)
+		toxictp.Size = UDim2.new(0, 72, 0, 50)
+		toxictp.Font = Enum.Font.FredokaOne
+		toxictp.Text = "Click"
+		toxictp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		toxictp.TextSize = 18.000
+
+		TextLabel_44.Parent = TeleportFrame
+		TextLabel_44.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_44.BackgroundTransparency = 1.000
+		TextLabel_44.Position = UDim2.new(0.0839416087, 0, 0.697507501, 0)
+		TextLabel_44.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_44.Font = Enum.Font.FredokaOne
+		TextLabel_44.Text = "Candy:"
+		TextLabel_44.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_44.TextSize = 18.000
+		TextLabel_44.TextXAlignment = Enum.TextXAlignment.Left
+
+		candytp.Name = "candytp"
+		candytp.Parent = TeleportFrame
+		candytp.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		candytp.BackgroundTransparency = 1.000
+		candytp.Position = UDim2.new(0.310218871, 0, 0.698431969, 0)
+		candytp.Size = UDim2.new(0, 72, 0, 50)
+		candytp.Font = Enum.Font.FredokaOne
+		candytp.Text = "Click"
+		candytp.TextColor3 = Color3.fromRGB(163, 0, 0)
+		candytp.TextSize = 18.000
+
+		ServerFrame.Name = "ServerFrame"
+		ServerFrame.Parent = Frame
+		ServerFrame.Active = true
+		ServerFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ServerFrame.BackgroundTransparency = 1.000
+		ServerFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		ServerFrame.Position = UDim2.new(0.372549027, 0, 0.225925922, 0)
+		ServerFrame.Size = UDim2.new(0, 274, 0, 199)
+		ServerFrame.Visible = false
+		ServerFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		ServerFrame.ScrollBarThickness = 6
+
+		TextLabel_45.Parent = ServerFrame
+		TextLabel_45.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_45.BackgroundTransparency = 1.000
+		TextLabel_45.Position = UDim2.new(0.0839416087, 0, -0.00156656303, 0)
+		TextLabel_45.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_45.Font = Enum.Font.FredokaOne
+		TextLabel_45.Text = "Fling Player:"
+		TextLabel_45.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_45.TextSize = 18.000
+		TextLabel_45.TextXAlignment = Enum.TextXAlignment.Left
+
+		flingtrue.Name = "flingtrue"
+		flingtrue.Parent = ServerFrame
+		flingtrue.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		flingtrue.BackgroundTransparency = 1.000
+		flingtrue.Position = UDim2.new(0.0218977928, 0, 0.0685185194, 0)
+		flingtrue.Size = UDim2.new(0, 76, 0, 50)
+		flingtrue.Visible = false
+		flingtrue.Font = Enum.Font.FredokaOne
+		flingtrue.Text = "True"
+		flingtrue.TextColor3 = Color3.fromRGB(0, 163, 0)
+		flingtrue.TextSize = 18.000
+
+		flingfalse.Name = "flingfalse"
+		flingfalse.Parent = ServerFrame
+		flingfalse.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		flingfalse.BackgroundTransparency = 1.000
+		flingfalse.Position = UDim2.new(0.0218977928, 0, 0.0685185194, 0)
+		flingfalse.Size = UDim2.new(0, 76, 0, 50)
+		flingfalse.Font = Enum.Font.FredokaOne
+		flingfalse.Text = "False"
+		flingfalse.TextColor3 = Color3.fromRGB(163, 0, 0)
+		flingfalse.TextSize = 18.000
+
+		targetflingname.Name = "targetflingname"
+		targetflingname.Parent = ServerFrame
+		targetflingname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		targetflingname.BackgroundTransparency = 1.000
+		targetflingname.BorderColor3 = Color3.fromRGB(27, 42, 53)
+		targetflingname.Position = UDim2.new(0.356350392, -79, 0.0511111096, -16)
+		targetflingname.Size = UDim2.new(0, 158, 0, 32)
+		targetflingname.Font = Enum.Font.FredokaOne
+		targetflingname.Text = "--type name here--"
+		targetflingname.TextColor3 = Color3.fromRGB(178, 178, 178)
+		targetflingname.TextSize = 13.000
+		targetflingname.TextXAlignment = Enum.TextXAlignment.Left
+
+		TextLabel_46.Parent = ServerFrame
+		TextLabel_46.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_46.BackgroundTransparency = 1.000
+		TextLabel_46.Position = UDim2.new(0.083941631, 0, 0.117877841, 0)
+		TextLabel_46.Size = UDim2.new(0, 30, 0, 50)
+		TextLabel_46.Font = Enum.Font.FredokaOne
+		TextLabel_46.Text = "Rejoin Server:"
+		TextLabel_46.TextColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_46.TextSize = 18.000
+		TextLabel_46.TextXAlignment = Enum.TextXAlignment.Left
+
+		rejoincli.Name = "rejoincli"
+		rejoincli.Parent = ServerFrame
+		rejoincli.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		rejoincli.BackgroundTransparency = 1.000
+		rejoincli.Position = UDim2.new(0.4817518, 0, 0.117592543, 0)
+		rejoincli.Size = UDim2.new(0, 76, 0, 50)
+		rejoincli.Font = Enum.Font.FredokaOne
+		rejoincli.Text = "Click"
+		rejoincli.TextColor3 = Color3.fromRGB(163, 0, 0)
+		rejoincli.TextSize = 18.000
+
+		eggselectorframe.Name = "eggselectorframe"
+		eggselectorframe.Parent = Frame
+		eggselectorframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		eggselectorframe.BackgroundTransparency = 1.000
+		eggselectorframe.Position = UDim2.new(0.702000022, 0, 0.409000009, 0)
+		eggselectorframe.Size = UDim2.new(0, 136, 0, 156)
+		eggselectorframe.ZIndex = -1
+		eggselectorframe.Image = "rbxassetid://3570695787"
+		eggselectorframe.ImageColor3 = Color3.fromRGB(33, 33, 33)
+		eggselectorframe.ScaleType = Enum.ScaleType.Slice
+		eggselectorframe.SliceCenter = Rect.new(100, 100, 100, 100)
+		eggselectorframe.SliceScale = 0.040
+
+		ScrollingFrame.Parent = eggselectorframe
+		ScrollingFrame.Active = true
+		ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		ScrollingFrame.BackgroundTransparency = 1.000
+		ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		ScrollingFrame.BorderSizePixel = 0
+		ScrollingFrame.Position = UDim2.new(0.0514705889, 0, 0.0576923117, 0)
+		ScrollingFrame.Size = UDim2.new(0, 122, 0, 137)
+		ScrollingFrame.ZIndex = -1
+		ScrollingFrame.CanvasSize = UDim2.new(0, 0, 4, 0)
+		ScrollingFrame.ScrollBarThickness = 4
+
+		basicegg.Name = "basicegg"
+		basicegg.Parent = ScrollingFrame
+		basicegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		basicegg.BackgroundTransparency = 1.000
+		basicegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		basicegg.BorderSizePixel = 0
+		basicegg.Position = UDim2.new(0.22131148, 0, 0.00473019481, 0)
+		basicegg.Size = UDim2.new(0, 68, 0, 27)
+		basicegg.ZIndex = -1
+		basicegg.Font = Enum.Font.FredokaOne
+		basicegg.Text = "Basic Egg"
+		basicegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		basicegg.TextSize = 14.000
+
+		lavaegg.Name = "lavaegg"
+		lavaegg.Parent = ScrollingFrame
+		lavaegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		lavaegg.BackgroundTransparency = 1.000
+		lavaegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		lavaegg.BorderSizePixel = 0
+		lavaegg.Position = UDim2.new(0.22131148, 0, 0.0592173748, 0)
+		lavaegg.Size = UDim2.new(0, 68, 0, 27)
+		lavaegg.ZIndex = -1
+		lavaegg.Font = Enum.Font.FredokaOne
+		lavaegg.Text = "Lava Egg"
+		lavaegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		lavaegg.TextSize = 14.000
+
+		desertegg.Name = "desertegg"
+		desertegg.Parent = ScrollingFrame
+		desertegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		desertegg.BackgroundTransparency = 1.000
+		desertegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		desertegg.BorderSizePixel = 0
+		desertegg.Position = UDim2.new(0.22131148, 0, 0.110499427, 0)
+		desertegg.Size = UDim2.new(0, 68, 0, 27)
+		desertegg.ZIndex = -1
+		desertegg.Font = Enum.Font.FredokaOne
+		desertegg.Text = "Desert Egg"
+		desertegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		desertegg.TextSize = 14.000
+
+		oceanegg.Name = "oceanegg"
+		oceanegg.Parent = ScrollingFrame
+		oceanegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		oceanegg.BackgroundTransparency = 1.000
+		oceanegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		oceanegg.BorderSizePixel = 0
+		oceanegg.Position = UDim2.new(0.22131148, 0, 0.168191746, 0)
+		oceanegg.Size = UDim2.new(0, 68, 0, 27)
+		oceanegg.ZIndex = -1
+		oceanegg.Font = Enum.Font.FredokaOne
+		oceanegg.Text = "Ocean Egg"
+		oceanegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		oceanegg.TextSize = 14.000
+
+		winteregg.Name = "winteregg"
+		winteregg.Parent = ScrollingFrame
+		winteregg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		winteregg.BackgroundTransparency = 1.000
+		winteregg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		winteregg.BorderSizePixel = 0
+		winteregg.Position = UDim2.new(0.22131148, 0, 0.230691746, 0)
+		winteregg.Size = UDim2.new(0, 68, 0, 27)
+		winteregg.ZIndex = -1
+		winteregg.Font = Enum.Font.FredokaOne
+		winteregg.Text = "Winter Egg"
+		winteregg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		winteregg.TextSize = 14.000
+
+		toxicegg.Name = "toxicegg"
+		toxicegg.Parent = ScrollingFrame
+		toxicegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		toxicegg.BackgroundTransparency = 1.000
+		toxicegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		toxicegg.BorderSizePixel = 0
+		toxicegg.Position = UDim2.new(0.22131148, 0, 0.28838405, 0)
+		toxicegg.Size = UDim2.new(0, 68, 0, 27)
+		toxicegg.ZIndex = -1
+		toxicegg.Font = Enum.Font.FredokaOne
+		toxicegg.Text = "Toxic Egg"
+		toxicegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		toxicegg.TextSize = 14.000
+
+		candyegg.Name = "candyegg"
+		candyegg.Parent = ScrollingFrame
+		candyegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		candyegg.BackgroundTransparency = 1.000
+		candyegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		candyegg.BorderSizePixel = 0
+		candyegg.Position = UDim2.new(0.22131148, 0, 0.344473779, 0)
+		candyegg.Size = UDim2.new(0, 68, 0, 27)
+		candyegg.ZIndex = -1
+		candyegg.Font = Enum.Font.FredokaOne
+		candyegg.Text = "Candy Egg"
+		candyegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		candyegg.TextSize = 14.000
+
+		forestegg.Name = "forestegg"
+		forestegg.Parent = ScrollingFrame
+		forestegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		forestegg.BackgroundTransparency = 1.000
+		forestegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		forestegg.BorderSizePixel = 0
+		forestegg.Position = UDim2.new(0.22131148, 0, 0.397358388, 0)
+		forestegg.Size = UDim2.new(0, 68, 0, 27)
+		forestegg.ZIndex = -1
+		forestegg.Font = Enum.Font.FredokaOne
+		forestegg.Text = "Forest Egg"
+		forestegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		forestegg.TextSize = 14.000
+
+		stormegg.Name = "stormegg"
+		stormegg.Parent = ScrollingFrame
+		stormegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		stormegg.BackgroundTransparency = 1.000
+		stormegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		stormegg.BorderSizePixel = 0
+		stormegg.Position = UDim2.new(0.22131148, 0, 0.459858388, 0)
+		stormegg.Size = UDim2.new(0, 68, 0, 27)
+		stormegg.ZIndex = -1
+		stormegg.Font = Enum.Font.FredokaOne
+		stormegg.Text = "Storm Egg"
+		stormegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		stormegg.TextSize = 14.000
+
+		blockyegg.Name = "blockyegg"
+		blockyegg.Parent = ScrollingFrame
+		blockyegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		blockyegg.BackgroundTransparency = 1.000
+		blockyegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		blockyegg.BorderSizePixel = 0
+		blockyegg.Position = UDim2.new(0.22131148, 0, 0.515948117, 0)
+		blockyegg.Size = UDim2.new(0, 68, 0, 27)
+		blockyegg.ZIndex = -1
+		blockyegg.Font = Enum.Font.FredokaOne
+		blockyegg.Text = "Blocky Egg"
+		blockyegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		blockyegg.TextSize = 14.000
+
+		spaceegg.Name = "spaceegg"
+		spaceegg.Parent = ScrollingFrame
+		spaceegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		spaceegg.BackgroundTransparency = 1.000
+		spaceegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		spaceegg.BorderSizePixel = 0
+		spaceegg.Position = UDim2.new(0.22131148, 0, 0.575242996, 0)
+		spaceegg.Size = UDim2.new(0, 68, 0, 27)
+		spaceegg.ZIndex = -1
+		spaceegg.Font = Enum.Font.FredokaOne
+		spaceegg.Text = "Space Egg"
+		spaceegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		spaceegg.TextSize = 14.000
+
+		dominusegg.Name = "dominusegg"
+		dominusegg.Parent = ScrollingFrame
+		dominusegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dominusegg.BackgroundTransparency = 1.000
+		dominusegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		dominusegg.BorderSizePixel = 0
+		dominusegg.Position = UDim2.new(0.22131148, 0, 0.637742996, 0)
+		dominusegg.Size = UDim2.new(0, 68, 0, 27)
+		dominusegg.ZIndex = -1
+		dominusegg.Font = Enum.Font.FredokaOne
+		dominusegg.Text = "Dominus Egg"
+		dominusegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		dominusegg.TextSize = 14.000
+
+		infegg.Name = "infegg"
+		infegg.Parent = ScrollingFrame
+		infegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		infegg.BackgroundTransparency = 1.000
+		infegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		infegg.BorderSizePixel = 0
+		infegg.Position = UDim2.new(0.22131148, 0, 0.698640406, 0)
+		infegg.Size = UDim2.new(0, 68, 0, 27)
+		infegg.ZIndex = -1
+		infegg.Font = Enum.Font.FredokaOne
+		infegg.Text = "Infinity Egg"
+		infegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		infegg.TextSize = 14.000
+
+		futureegg.Name = "futureegg"
+		futureegg.Parent = ScrollingFrame
+		futureegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		futureegg.BackgroundTransparency = 1.000
+		futureegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		futureegg.BorderSizePixel = 0
+		futureegg.Position = UDim2.new(0.22131148, 0, 0.756332695, 0)
+		futureegg.Size = UDim2.new(0, 68, 0, 27)
+		futureegg.ZIndex = -1
+		futureegg.Font = Enum.Font.FredokaOne
+		futureegg.Text = "Future Egg"
+		futureegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		futureegg.TextSize = 14.000
+
+		cityegg.Name = "cityegg"
+		cityegg.Parent = ScrollingFrame
+		cityegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		cityegg.BackgroundTransparency = 1.000
+		cityegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		cityegg.BorderSizePixel = 0
+		cityegg.Position = UDim2.new(0.22131148, 0, 0.815627575, 0)
+		cityegg.Size = UDim2.new(0, 68, 0, 27)
+		cityegg.ZIndex = -1
+		cityegg.Font = Enum.Font.FredokaOne
+		cityegg.Text = "City Egg"
+		cityegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		cityegg.TextSize = 14.000
+
+		moonegg.Name = "moonegg"
+		moonegg.Parent = ScrollingFrame
+		moonegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		moonegg.BackgroundTransparency = 1.000
+		moonegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		moonegg.BorderSizePixel = 0
+		moonegg.Position = UDim2.new(0.22131148, 0, 0.876525044, 0)
+		moonegg.Size = UDim2.new(0, 68, 0, 27)
+		moonegg.ZIndex = -1
+		moonegg.Font = Enum.Font.FredokaOne
+		moonegg.Text = "Moon Egg"
+		moonegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		moonegg.TextSize = 14.000
+
+		fireegg.Name = "fireegg"
+		fireegg.Parent = ScrollingFrame
+		fireegg.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		fireegg.BackgroundTransparency = 1.000
+		fireegg.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		fireegg.BorderSizePixel = 0
+		fireegg.Position = UDim2.new(0.22131148, 0, 0.929409683, 0)
+		fireegg.Size = UDim2.new(0, 68, 0, 27)
+		fireegg.ZIndex = -1
+		fireegg.Font = Enum.Font.FredokaOne
+		fireegg.Text = "Fire Egg"
+		fireegg.TextColor3 = Color3.fromRGB(230, 230, 230)
+		fireegg.TextSize = 14.000
+
+		Choice.Name = "Choice"
+		Choice.Parent = eggselectorframe
+		Choice.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Choice.BackgroundTransparency = 1.000
+		Choice.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		Choice.BorderSizePixel = 0
+		Choice.Position = UDim2.new(0.661764681, 0, 0.670923471, 0)
+		Choice.Size = UDim2.new(0, 35, 0, 19)
+		Choice.ZIndex = -2
+		Choice.Font = Enum.Font.SourceSans
+		Choice.Text = "basic"
+		Choice.TextColor3 = Color3.fromRGB(0, 0, 0)
+		Choice.TextSize = 1.000
+		Choice.TextTransparency = 1.000
+
+		Changelog.Name = "Changelog"
+		Changelog.Parent = EXHIBITION
+		Changelog.AnchorPoint = Vector2.new(0.5, 0.5)
+		Changelog.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		Changelog.BackgroundTransparency = 1.000
+		Changelog.Position = UDim2.new(0.5, 0, 2, 0)
+		Changelog.Size = UDim2.new(0, 400, 0, 238)
+		Changelog.Image = "rbxassetid://3570695787"
+		Changelog.ImageColor3 = Color3.fromRGB(0, 0, 0)
+		Changelog.ScaleType = Enum.ScaleType.Slice
+		Changelog.SliceCenter = Rect.new(100, 100, 100, 100)
+		Changelog.SliceScale = 0.050
+
+		f.Name = "f"
+		f.Parent = Changelog
+		f.AnchorPoint = Vector2.new(0.5, 0.5)
+		f.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		f.BackgroundTransparency = 1.000
+		f.Position = UDim2.new(0.458878219, 0, 0.436974794, 0)
+		f.Size = UDim2.new(0, 392, 0, 233)
+		f.ZIndex = -2
+		f.Image = "rbxassetid://3570695787"
+		f.ImageColor3 = Color3.fromRGB(38, 38, 38)
+		f.ScaleType = Enum.ScaleType.Slice
+		f.SliceCenter = Rect.new(100, 100, 100, 100)
+		f.SliceScale = 0.050
+
+		dam_3.Name = "dam"
+		dam_3.Parent = Changelog
+		dam_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dam_3.BackgroundTransparency = 1.000
+		dam_3.Position = UDim2.new(-0.427568048, 0, -0.507773995, 0)
+		dam_3.Size = UDim2.new(0, 743, 0, 495)
+		dam_3.ZIndex = -3
+		dam_3.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		dam_4.Name = "dam"
+		dam_4.Parent = Changelog
+		dam_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		dam_4.BackgroundTransparency = 1.000
+		dam_4.Position = UDim2.new(-0.427568048, 0, -0.507773995, 0)
+		dam_4.Size = UDim2.new(0, 743, 0, 495)
+		dam_4.ZIndex = -3
+		dam_4.Image = "http://www.roblox.com/asset/?id=13628158155"
+
+		TextLabel_47.Parent = Changelog
+		TextLabel_47.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_47.BackgroundTransparency = 1.000
+		TextLabel_47.Position = UDim2.new(0.597500086, 0, 0, 0)
+		TextLabel_47.Size = UDim2.new(0, 200, 0, 50)
+		TextLabel_47.Font = Enum.Font.FredokaOne
+		TextLabel_47.Text = "exhibition hub"
+		TextLabel_47.TextColor3 = Color3.fromRGB(54, 54, 54)
+		TextLabel_47.TextSize = 14.000
+
+		TextLabel_48.Parent = Changelog
+		TextLabel_48.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		TextLabel_48.BackgroundTransparency = 1.000
+		TextLabel_48.Position = UDim2.new(-0.0624999255, 0, 0, 0)
+		TextLabel_48.Size = UDim2.new(0, 217, 0, 50)
+		TextLabel_48.Font = Enum.Font.FredokaOne
+		TextLabel_48.Text = "Changelog:      b0.01"
+		TextLabel_48.TextColor3 = Color3.fromRGB(54, 54, 54)
+		TextLabel_48.TextSize = 14.000
+
+		changelogframe.Name = "changelog frame"
+		changelogframe.Parent = Changelog
+		changelogframe.Active = true
+		changelogframe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changelogframe.BackgroundTransparency = 1.000
+		changelogframe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+		changelogframe.Position = UDim2.new(0.0649999976, 0, 0.226890758, 0)
+		changelogframe.Size = UDim2.new(0, 341, 0, 141)
+		changelogframe.CanvasSize = UDim2.new(0, 0, 4, 0)
+		changelogframe.ScrollBarThickness = 5
+
+		plus.Name = "plus"
+		plus.Parent = changelogframe
+		plus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus.BackgroundTransparency = 1.000
+		plus.Position = UDim2.new(0.0974999964, 0, -0.00420166645, 0)
+		plus.Size = UDim2.new(0, 18, 0, 44)
+		plus.Font = Enum.Font.FredokaOne
+		plus.Text = "!"
+		plus.TextColor3 = Color3.fromRGB(0, 100, 193)
+		plus.TextSize = 19.000
+
+		changed.Name = "changed"
+		changed.Parent = changelogframe
+		changed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed.BackgroundTransparency = 1.000
+		changed.Position = UDim2.new(0.217500001, 0, 0.0441176817, 0)
+		changed.Size = UDim2.new(0, 18, 0, 44)
+		changed.Font = Enum.Font.FredokaOne
+		changed.Text = "Released to the public."
+		changed.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed.TextSize = 15.000
+		changed.TextXAlignment = Enum.TextXAlignment.Left
+
+		changed_2.Name = "changed"
+		changed_2.Parent = changelogframe
+		changed_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		changed_2.BackgroundTransparency = 1.000
+		changed_2.Position = UDim2.new(0.217500001, 0, -0.00420166645, 0)
+		changed_2.Size = UDim2.new(0, 18, 0, 44)
+		changed_2.Font = Enum.Font.FredokaOne
+		changed_2.Text = "Compatible with clicker madness game."
+		changed_2.TextColor3 = Color3.fromRGB(193, 193, 193)
+		changed_2.TextSize = 15.000
+		changed_2.TextXAlignment = Enum.TextXAlignment.Left
+
+		plus_2.Name = "plus"
+		plus_2.Parent = changelogframe
+		plus_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		plus_2.BackgroundTransparency = 1.000
+		plus_2.Position = UDim2.new(0.099999994, 0, 0.0441176854, 0)
+		plus_2.Size = UDim2.new(0, 18, 0, 44)
+		plus_2.Font = Enum.Font.FredokaOne
+		plus_2.Text = "+"
+		plus_2.TextColor3 = Color3.fromRGB(0, 193, 0)
+		plus_2.TextSize = 19.000
+
+		okx.Name = "okx"
+		okx.Parent = Changelog
+		okx.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+		okx.BackgroundTransparency = 1.000
+		okx.Position = UDim2.new(0.342500001, 0, 0.859243691, 0)
+		okx.Size = UDim2.new(0, 125, 0, 16)
+		okx.Font = Enum.Font.FredokaOne
+		okx.Text = "OK"
+		okx.TextColor3 = Color3.fromRGB(4, 217, 0)
+		okx.TextScaled = true
+		okx.TextSize = 14.000
+		okx.TextWrapped = true
+
+		-- Scripts:
+
+		local function OBVIQ_fake_script() -- welcome.LocalScript 
+			local script = Instance.new('LocalScript', welcome)
+
+			wait(2.8)
+
+			script.Parent.Text = "W"
+			wait(0.1)
+			script.Parent.Text = "We"
+			wait(0.1)
+			script.Parent.Text = "Wel"
+			wait(0.1)
+			script.Parent.Text = "Welc"
+			wait(0.1)
+			script.Parent.Text = "Welco"
+			wait(0.1)
+			script.Parent.Text = "Welcom"
+			wait(0.1)
+			script.Parent.Text = "Welcome"
+			wait(0.1)
+		end
+		coroutine.wrap(OBVIQ_fake_script)()
+		local function XZQXY_fake_script() -- title.LocalScript 
+			local script = Instance.new('LocalScript', title)
+
+			repeat
+				wait()
+			until
+			script.Parent.Parent.welcome.Text == "Welcome"
+
+			wait(1)
+
+			repeat
+				script.Parent.Parent.lliinneee.TextTransparency -= 0.03
+				script.Parent.TextTransparency -= 0.03
+				wait(0.01)
+			until
+			script.Parent.TextTransparency <= 0
+
+			wait(5)
+
+
+			repeat
+				script.Parent.TextTransparency += 0.03
+				script.Parent.Parent.welcome.TextTransparency += 0.03
+				script.Parent.Parent.lliinneee.TextTransparency += 0.03
+				wait(0.01)
+			until
+			script.Parent.TextTransparency >= 1
+
+			wait(0.01)
+
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Please Wait";
+				Text = " ";
+				Duration = 3.27;
+			})
+			wait(0.4)
+			script.Parent.Parent.Parent.loading.Visible = false
+			pcall(function()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+				blureffect:Destroy()
+			end)
+			wait(1.9)
+			wait(0.4)
+			script.Parent.Parent.Parent.Changelog:TweenPosition(UDim2.new(0.5, 0,0.5, 0))
+		end
+		coroutine.wrap(XZQXY_fake_script)()
+		local function JTFSSO_fake_script() -- title.Script 
+			local script = Instance.new('Script', title)
+
+			local RS = game:GetService("RunService")
+
+			local rainbow = script.Parent
+			local grad = rainbow.UIGradient
+
+			local counter = 0       
+			local w = math.pi / 6 
+			local CS = {}         
+			local num = 15 			
+			local frames = 0	
+
+			local count = 0
+			local cskCache = {}
+			local gamepassid = 8782801
+			local MarketplaceService = game:GetService("MarketplaceService")
+
+			while true do
+				for i = 0, num do
+					local c = Color3.fromRGB(127 * math.sin(w*i + counter) + 128, 127 * math.sin(w*i + 2 * math.pi/3 + counter) + 128, 127*math.sin(w*i + 4*math.pi/3 + counter) + 128)
+					table.insert(CS, i+1, ColorSequenceKeypoint.new(i/num, c))
+				end
+				local newCS = ColorSequence.new(CS)
+
+				if #cskCache > 0 then
+					if newCS == cskCache[1] then
+						CS = {}
+						break
+					end
+				end
+				table.insert(cskCache, newCS)
+
+				CS = {}
+
+				counter = counter + math.pi/40
+				if (counter >= math.pi * 2) then counter = 0 end
+				task.wait()
+			end
+
+			local finalCacheCt = #cskCache
+			local rotation = 1
+
+			RS.Heartbeat:Connect(function()	
+				if math.fmod(frames, 2) == 0 then
+					grad.Color = cskCache[rotation]			
+					if rotation >= #cskCache then rotation = 0 end
+					rotation = rotation + 1				
+				end
+				if frames >= 1000 then frames = 0 end
+				frames = frames + 1
+			end)
+		end
+		coroutine.wrap(JTFSSO_fake_script)()
+		local function YJVVNO_fake_script() -- lliinneee.Script 
+			local script = Instance.new('Script', lliinneee)
+
+			local RS = game:GetService("RunService")
+
+			local rainbow = script.Parent
+			local grad = rainbow.UIGradient
+
+			local counter = 0       
+			local w = math.pi / 6 
+			local CS = {}         
+			local num = 15 			
+			local frames = 0	
+
+			local count = 0
+			local cskCache = {}
+			local gamepassid = 8782801
+			local MarketplaceService = game:GetService("MarketplaceService")
+
+			while true do
+				for i = 0, num do
+					local c = Color3.fromRGB(127 * math.sin(w*i + counter) + 128, 127 * math.sin(w*i + 2 * math.pi/3 + counter) + 128, 127*math.sin(w*i + 4*math.pi/3 + counter) + 128)
+					table.insert(CS, i+1, ColorSequenceKeypoint.new(i/num, c))
+				end
+				local newCS = ColorSequence.new(CS)
+
+				if #cskCache > 0 then
+					if newCS == cskCache[1] then
+						CS = {}
+						break
+					end
+				end
+				table.insert(cskCache, newCS)
+
+				CS = {}
+
+				counter = counter + math.pi/40
+				if (counter >= math.pi * 2) then counter = 0 end	
+				task.wait()
+			end
+
+			local finalCacheCt = #cskCache
+			local rotation = 1
+
+			RS.Heartbeat:Connect(function()	
+				if math.fmod(frames, 2) == 0 then
+					grad.Color = cskCache[rotation]			
+					if rotation >= #cskCache then rotation = 0 end
+					rotation = rotation + 1				
+				end
+				if frames >= 1000 then frames = 0 end
+				frames = frames + 1
+			end)
+		end
+		coroutine.wrap(YJVVNO_fake_script)()
+		local function VYLYPW_fake_script() -- a_2.Script 
+			local script = Instance.new('Script', a_2)
+
+			local button = script.Parent
+			local gradient = button.UIGradient
+			local ts = game:GetService("TweenService") 
+			local ti = TweenInfo.new(1, Enum.EasingStyle.Circular, Enum.EasingDirection.Out)
+			local offset1 = {Offset = Vector2.new(1, 0)}
+			local create = ts:Create(gradient, ti, offset1)
+			local startingPos = Vector2.new(-1, 0) --start on the right, tween to the left so it looks like the shine went from left to right
+			local addWait = 2.3 --the amount of seconds between each couplet of shines
+
+			gradient.Offset = startingPos
+
+			local function animate()
+
+				create:Play()
+				create.Completed:Wait() --wait for tween to stop
+				gradient.Offset = startingPos --reset offset
+				create:Play() --play again (I did this only 2 times per "couplet", you can do it more times if you want)
+				create.Completed:Wait()
+				gradient.Offset = startingPos
+				wait(addWait) --wait some bit before the next couplet
+				animate() --call itself to make this into a loop
+
+			end
+
+			animate() --but we still need to initially call it
+		end
+		coroutine.wrap(VYLYPW_fake_script)()
+		local function JYDN_fake_script() -- TextLabel_19.LocalScript 
+			local script = Instance.new('LocalScript', TextLabel_19)
+
+			while true do
+				for i = 0,1,0.01 do
+					script.Parent.TextColor3 = Color3.fromHSV(i,1,1)
+					wait(0.1)
+				end
+			end
+		end
+		coroutine.wrap(JYDN_fake_script)()
+		local function FJDR_fake_script() -- Player.LocalScript 
+			local script = Instance.new('LocalScript', Player)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(FJDR_fake_script)()
+		local function AJHTW_fake_script() -- Autofarm.LocalScript 
+			local script = Instance.new('LocalScript', Autofarm)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(AJHTW_fake_script)()
+		local function ZGYVFU_fake_script() -- Autobuyx.LocalScript 
+			local script = Instance.new('LocalScript', Autobuyx)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(ZGYVFU_fake_script)()
+		local function VZIE_fake_script() -- Funx.LocalScript 
+			local script = Instance.new('LocalScript', Funx)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(VZIE_fake_script)()
+		local function TPOGZ_fake_script() -- Teleportx.LocalScript 
+			local script = Instance.new('LocalScript', Teleportx)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(TPOGZ_fake_script)()
+		local function GYYEA_fake_script() -- Serverx.LocalScript 
+			local script = Instance.new('LocalScript', Serverx)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(GYYEA_fake_script)()
+		local function JIOFMBH_fake_script() -- Settingsx.LocalScript 
+			local script = Instance.new('LocalScript', Settingsx)
+
+			script.Parent.MouseEnter:Connect(function()
+				hovering = true
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+			end)
+
+			script.Parent.MouseLeave:Connect(function()
+				hovering = false
+
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+			end)
+
+
+			script.Parent.MouseButton1Up:Connect(function()
+				if hovering == false then
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 14}):Play()
+
+				else
+					local tws = game:GetService('TweenService')
+					local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+					tws:Create(script.Parent, twinfo, {TextSize = 15.8}):Play()
+
+				end
+			end)
+
+			script.Parent.MouseButton1Down:Connect(function()
+				local tws = game:GetService('TweenService')
+				local twinfo = TweenInfo.new(0.1, Enum.EasingStyle.Sine)
+
+				tws:Create(script.Parent, twinfo, {TextSize = 12}):Play()
+			end)
+		end
+		coroutine.wrap(JIOFMBH_fake_script)()
+		local function TLNRD_fake_script() -- targetnametp.LocalScript 
+			local script = Instance.new('LocalScript', targetnametp)
+			local NameHere = script.Parent
+
+			NameHere.FocusLost:connect(function()
+				for i,v in pairs(game.Players:GetChildren()) do
+					if (string.sub(string.lower(v.Name),1,string.len(NameHere.Text))) == string.lower(NameHere.Text) then
+						NameHere.Text = v.Name
+					end
+				end
+			end)
+		end
+		coroutine.wrap(TLNRD_fake_script)()
+		local function KREYTKR_fake_script() -- targetflingname.LocalScript 
+			local script = Instance.new('LocalScript', targetflingname)
+
+
+			local NameHere = script.Parent
+
+			NameHere.FocusLost:connect(function()
+				for i,v in pairs(game.Players:GetChildren()) do
+					if (string.sub(string.lower(v.Name),1,string.len(NameHere.Text))) == string.lower(NameHere.Text) then
+						NameHere.Text = v.Name
+					end
+				end
+			end)
+
+		end
+		coroutine.wrap(KREYTKR_fake_script)()
+		local function KUFTJXP_fake_script() -- changelogframe.colors 
+			local script = Instance.new('Script', changelogframe)
+
+	--[[
+	green = 0, 193, 0
+	
+	red = 223, 0, 4
+	
+	yellow = 255, 255, 0
+	--]]
+		end
+		coroutine.wrap(KUFTJXP_fake_script)()
+
+
+
+		------------------------------------------------------------------------------------------------------------------------------------
+
+		local UserInputService = game:GetService("UserInputService")
+		local runService = (game:GetService("RunService"));
+
+		local gui = Frame
+
+		local dragging
+		local dragInput
+		local dragStart
+		local startPos
+
+		function Lerp(a, b, m)
+			return a + (b - a) * m
+		end;
+
+		local lastMousePos
+		local lastGoalPos
+		local DRAG_SPEED = (8); -- // The speed of the UI darg.
+		function Update(dt)
+			if not (startPos) then return end;
+			if not (dragging) and (lastGoalPos) then
+				gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, lastGoalPos.X.Offset, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, lastGoalPos.Y.Offset, dt * DRAG_SPEED))
+				return 
+			end;
+
+			local delta = (lastMousePos - UserInputService:GetMouseLocation())
+			local xGoal = (startPos.X.Offset - delta.X);
+			local yGoal = (startPos.Y.Offset - delta.Y);
+			lastGoalPos = UDim2.new(startPos.X.Scale, xGoal, startPos.Y.Scale, yGoal)
+			gui.Position = UDim2.new(startPos.X.Scale, Lerp(gui.Position.X.Offset, xGoal, dt * DRAG_SPEED), startPos.Y.Scale, Lerp(gui.Position.Y.Offset, yGoal, dt * DRAG_SPEED))
+		end;
+
+		gui.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+				lastMousePos = UserInputService:GetMouseLocation()
+
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+
+		gui.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+
+		runService.Heartbeat:Connect(Update)
+
+
+
+		local function hi()
+			local script = Instance.new('LocalScript', okx)
+			hovering = false -- mouse hover
+			hovering2 = false -- backup mouse hover
+			pressed = false -- avoids size changes while verifying
+
+			okx.MouseButton1Down:Connect(function()
+				if pressed == false then
+					okx:TweenSize(UDim2.new(0, 125,0, 12), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2 , true)
+
+					pressed = true
+
+					wait(0.4)
+
+					Changelog:TweenPosition(UDim2.new(0.5, 0,2, 0), Enum.EasingDirection.In, Enum.EasingStyle.Quad, 0.9, true)
+
+					wait(2.7)
+
+					script.Parent.Parent.Parent.Frame:TweenPosition(UDim2.new(0.314, 0,0.689, 0))
+
+				end
+
+			end)
+
+			okx.MouseEnter:Connect(function()
+
+				if pressed == false then
+
+					hovering = true
+					hovering2 = true
+
+					okx:TweenSize(UDim2.new(0, 125,0, 21), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2, true)
+				end
+
+			end)
+
+			okx.MouseLeave:Connect(function()
+				if pressed == false then
+					hovering = false
+					hovering2 = false
+
+					okx:TweenSize(UDim2.new(0, 125,0, 16), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2, true)
+				end
+
+
+			end)
+
+			okx.MouseButton1Up:Connect(function()
+				if hovering == true or hovering2 == true then
+
+					okx:TweenSize(UDim2.new(0, 125,0, 21), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2, true)
+
+				else
+					okx:TweenSize(UDim2.new(0, 125,0, 16), Enum.EasingDirection.InOut, Enum.EasingStyle.Quint, 0.2, true)
+
+				end
+
+
+			end)
+
+
+		end
+		coroutine.wrap(hi)()
+
+
+		Player.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autobuyx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Funx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Serverx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = true
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = false
+			otherframe2.Visible = false
+			TeleportFrame.Visible = false
+			ServerFrame.Visible = false
+			SettingsFrame.Visible = false
+
+		end)
+
+		Autofarm.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autofarm.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Autobuyx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Funx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Serverx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = true
+			AutoBuyFrame.Visible = false
+			otherframe2.Visible = false
+			TeleportFrame.Visible = false
+			ServerFrame.Visible = false
+			SettingsFrame.Visible = false
+
+		end)
+
+
+
+		Autobuyx.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autobuyx.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Funx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Serverx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = true
+			otherframe2.Visible = false
+			TeleportFrame.Visible = false
+			ServerFrame.Visible = false
+			SettingsFrame.Visible = false
+
+		end)
+
+
+
+		Funx.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autobuyx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Funx.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Serverx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = false
+			otherframe2.Visible = true
+			TeleportFrame.Visible = false
+			ServerFrame.Visible = false
+			SettingsFrame.Visible = false
+
+		end)
+
+
+
+		Teleportx.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autobuyx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Funx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Serverx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = false
+			otherframe2.Visible = false
+			TeleportFrame.Visible = true
+			ServerFrame.Visible = false
+			SettingsFrame.Visible = false
+
+		end)
+
+
+		Serverx.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autobuyx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Funx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Serverx.TextColor3 = Color3.fromRGB(255, 255, 255)
+			Settingsx.TextColor3 = Color3.fromRGB(113, 113, 113)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = false
+			otherframe2.Visible = false
+			TeleportFrame.Visible = false
+			ServerFrame.Visible = true
+			SettingsFrame.Visible = false
+
+		end)
+
+
+
+		Settingsx.MouseButton1Down:Connect(function()
+
+			Player.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autofarm.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Autobuyx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Funx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Teleportx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Serverx.TextColor3 = Color3.fromRGB(113, 113, 113)
+			Settingsx.TextColor3 = Color3.fromRGB(255, 255, 255)
+
+			PlayerFrame.Visible = false
+			AutofarmFrame.Visible = false
+			AutoBuyFrame.Visible = false
+			otherframe2.Visible = false
+			TeleportFrame.Visible = false
+			ServerFrame.Visible = false
+			SettingsFrame.Visible = true
+
+		end)
+
+
+
+		flyfalse.MouseButton1Down:Connect(function()
+
+
+			pcall(function()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiFly:Destroy()
+				game:GetService("Players").LocalPlayer.Character.AntiGravity:Destroy()
+			end)
+
+			flyfalse.Visible = false
+			flytrue.Visible = true
+
+			local speaker = game.Players.LocalPlayer
+			local RunService = game:GetService("RunService")
+			local CFspeed = 50
+			speaker.Character:FindFirstChildOfClass('Humanoid').PlatformStand = true
+			local Head = speaker.Character:WaitForChild("Head")
+			Head.Anchored = true
+			if CFloop then CFloop:Disconnect() end
+			CFloop = RunService.Heartbeat:Connect(function(deltaTime)
+				local moveDirection = speaker.Character:FindFirstChildOfClass('Humanoid').MoveDirection * (CFspeed * deltaTime)
+				local headCFrame = Head.CFrame
+				local cameraCFrame = workspace.CurrentCamera.CFrame
+				local cameraOffset = headCFrame:ToObjectSpace(cameraCFrame).Position
+				cameraCFrame = cameraCFrame * CFrame.new(-cameraOffset.X, -cameraOffset.Y, -cameraOffset.Z + 1)
+				local cameraPosition = cameraCFrame.Position
+				local headPosition = headCFrame.Position
+
+				local objectSpaceVelocity = CFrame.new(cameraPosition, Vector3.new(headPosition.X, cameraPosition.Y, headPosition.Z)):VectorToObjectSpace(moveDirection)
+				Head.CFrame = CFrame.new(headPosition) * (cameraCFrame - cameraPosition) * CFrame.new(objectSpaceVelocity)
+			end)
+		end)
+
+		flytrue.MouseButton1Down:Connect(function()
+			flytrue.Visible = false
+			flyfalse.Visible = true
+
+			local speaker = game.Players.LocalPlayer
+			if CFloop then
+				CFloop:Disconnect()
+				speaker.Character:FindFirstChildOfClass('Humanoid').PlatformStand = false
+				local Head = speaker.Character:WaitForChild("Head")
+				Head.Anchored = false
+			end
+		end)
+
+
+
+		musictrue.MouseButton1Down:Connect(function()
+
+			musictrue.Visible = false
+			musicfalse.Visible = true
+
+			game.Players.LocalPlayer.Music.Volume = 1
+
+
+		end)
+
+
+		musicfalse.MouseButton1Down:Connect(function()
+
+			musictrue.Visible = true
+			musicfalse.Visible = false
+
+			game.Players.LocalPlayer.Music.Volume = 0
+
+		end)
+
+
+		local function MWA_fake_script() -- Autofarm.LocalScript 
+			local script = Instance.new('LocalScript', Frame)
+			while true do
+
+				pcall(function()
+					game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = walkspeedx.Text
+				end)
+				wait(0.1)
+			end
+		end
+
+		coroutine.wrap(MWA_fake_script)()
+
+		local function WA_fake_script() -- Autofarm.LocalScript 
+			local script = Instance.new('LocalScript', Frame)
+			while true do
+
+				pcall(function()
+					game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = jumppowerx.Text
+				end)
+				wait(0.1)
+			end
+		end
+		coroutine.wrap(WA_fake_script)()
+
+
+		close.MouseButton1Down:Connect(function()
+			Frame.Visible = false
+			minimized.Visible = true
+
+			local framepos041423 = Frame.Position
+			minimized.Position = framepos041423
+
+		end)
+
+		open.MouseButton1Down:Connect(function()
+			minimized.Visible = false
+			Frame.Visible = true
+
+		end)
+
+		tradesfalse.MouseButton1Down:Connect(function()
+
+			tradesfalse.Visible = false
+			tradestrue.Visible = true
+
+			local args = {
+				[1] = false
+			}
+
+			game:GetService("ReplicatedStorage"):WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("TradeService"):WaitForChild("SetTradesEnabled"):FireServer(unpack(args))
+
+		end)
+
+		tradestrue.MouseButton1Down:Connect(function()
+
+			tradesfalse.Visible = true
+			tradestrue.Visible = false
+
+			local args = {
+				[1] = true
+			}
+
+			game:GetService("ReplicatedStorage"):WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("TradeService"):WaitForChild("SetTradesEnabled"):FireServer(unpack(args))
+
+		end)
+
+		clickfalse.MouseButton1Down:Connect(function()
+			clickfalse.Visible = false
+			clicktrue.Visible = true
+
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Warning";
+				Text = "Anti-AFK Has Been Executed.";
+				Duration = 5.5;
+			})
+
+
+			repeat wait() until game:IsLoaded()
+			game:GetService("Players").LocalPlayer.Idled:connect(function()
+				game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+			end)
+
+			while clickfalse.Visible == false do
+
+				pcall(function()
+
+					clickcounterx.Text = game.Players.LocalPlayer.PlayerGui.LeftPanel.Main.Stats.Clicks.Image.Value.Text
+
+					pcall(function()
+
+						for i,v in pairs(getconnections(game.Players.LocalPlayer.PlayerGui.Click.Button.MouseButton1Down)) do
+							v:Fire()
+						end
+
+						game:GetService("ReplicatedStorage"):WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("BeastModeService"):WaitForChild("Begin"):FireServer()
+
+						local args = {
+							[1] = 1
+						}
+
+						game:GetService("ReplicatedStorage"):WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("ClickService"):WaitForChild("Click"):FireServer(unpack(args))
+					end)
+
+					pcall(function()
+						local pos = game.Workspace.ScriptObjects.BasePickup.HumanoidRootPart.CFrame
+						game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = pos
+					end)
+
+					local args = {
+						[1] = "Zombie"
+					}
+
+					game:GetService("ReplicatedStorage"):WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("CursorCannonService"):WaitForChild("FireBoss"):FireServer(unpack(args))
+
+
+
+
+				end)
+				wait(0.0000000000001)
+			end
+		end)
+
+		clicktrue.MouseButton1Down:Connect(function()
+			clicktrue.Visible = false
+			clickfalse.Visible = true
+		end)
+
+
+		rebirthfalse.MouseButton1Down:Connect(function()
+
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Warning";
+				Text = "Anti-AFK Has Been Executed.";
+				Duration = 5.5;
+			})
+
+
+			repeat wait() until game:IsLoaded()
+			game:GetService("Players").LocalPlayer.Idled:connect(function()
+				game:GetService("VirtualUser"):ClickButton2(Vector2.new())
+			end)
+
+			rebirthtrue.Visible = true
+			rebirthfalse.Visible = false
+
+			gemsbeforex.Text = game.Players.LocalPlayer.PlayerGui.LeftPanel.Main.Stats.Gems.Image.Value.Text
+
+			while rebirthfalse.Visible == false do
+				pcall(function()
+					gemsnowx.Text = game.Players.LocalPlayer.PlayerGui.LeftPanel.Main.Stats.Gems.Image.Value.Text
+					local amountx = rebirthamountx.Text*1
+					local args = {
+						[1] = amountx
+					}
+
+					game:GetService("ReplicatedStorage"):WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("RebirthService"):WaitForChild("BuyRebirths"):FireServer(unpack(args))
+				end)
+				wait(0.00001)
+			end
+		end)
+
+		rebirthtrue.MouseButton1Down:Connect(function()
+			rebirthfalse.Visible = true
+			rebirthtrue.Visible = false
+		end)
+
+		eggfalse.MouseButton1Down:Connect(function()
+
+			eggfalse.Visible = false
+			eggtrue.Visible = true
+
+			while eggfalse.Visible == false do
+				pcall(function()
+
+					local args = {
+						[1] = Choice.Text
+					}
+
+					game:GetService("ReplicatedStorage"):WaitForChild("Aero"):WaitForChild("AeroRemoteServices"):WaitForChild("EggService"):WaitForChild("Purchase"):FireServer(unpack(args))
+
+
+				end)
+				wait(0.001)
+			end
+		end)
+
+		eggtrue.MouseButton1Down:Connect(function()
+			eggfalse.Visible = true
+			eggtrue.Visible = false
+
+		end)
+
+		changeselectedegg.MouseButton1Down:Connect(function()
+			changeselectedegg.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			changeselectedegg.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			eggselectorframe:TweenPosition(UDim2.new(1.133, -68,0.42, 0))
+		end)
+
+
+		basicegg.MouseButton1Down:Connect(function()
+			Choice.Text = "basic"
+			selectedegg.Text = "Basic Egg"
+			eggpricex.Text = "5K Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+		lavaegg.MouseButton1Down:Connect(function()
+			Choice.Text = "lava"
+			selectedegg.Text = "Lava Egg"
+			eggpricex.Text = "2M Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		desertegg.MouseButton1Down:Connect(function()
+			Choice.Text = "desert"
+			selectedegg.Text = "Desert Egg"
+			eggpricex.Text = "20M Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		oceanegg.MouseButton1Down:Connect(function()
+			Choice.Text = "ocean"
+			selectedegg.Text = "Ocean Egg"
+			eggpricex.Text = "1B Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+
+		winteregg.MouseButton1Down:Connect(function()
+			Choice.Text = "winter"
+			selectedegg.Text = "Winter Egg"
+			eggpricex.Text = "10B Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		toxicegg.MouseButton1Down:Connect(function()
+			Choice.Text = "toxic"
+			selectedegg.Text = "Toxic Egg"
+			eggpricex.Text = "200B Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		candyegg.MouseButton1Down:Connect(function()
+			Choice.Text = "candy"
+			selectedegg.Text = "Candy Egg"
+			eggpricex.Text = "5T Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		forestegg.MouseButton1Down:Connect(function()
+			Choice.Text = "forest"
+			selectedegg.Text = "Forest Egg"
+			eggpricex.Text = "20T Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+
+		stormegg.MouseButton1Down:Connect(function()
+			Choice.Text = "storm"
+			selectedegg.Text = "Storm Egg"
+			eggpricex.Text = "1q Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		blockyegg.MouseButton1Down:Connect(function()
+			Choice.Text = "blocky"
+			selectedegg.Text = "Blocky Egg"
+			eggpricex.Text = "2q Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		spaceegg.MouseButton1Down:Connect(function()
+			Choice.Text = "space"
+			selectedegg.Text = "Space Egg"
+			eggpricex.Text = "10q Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		dominusegg.MouseButton1Down:Connect(function()
+			Choice.Text = "dominus"
+			selectedegg.Text = "Dominus Egg"
+			eggpricex.Text = "100q Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		infegg.MouseButton1Down:Connect(function()
+			Choice.Text = "infinity"
+			selectedegg.Text = "Infinity Egg"
+			eggpricex.Text = "625q Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		futureegg.MouseButton1Down:Connect(function()
+			Choice.Text = "future"
+			selectedegg.Text = "Future Egg"
+			eggpricex.Text = "30Q Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		cityegg.MouseButton1Down:Connect(function()
+			Choice.Text = "city"
+			selectedegg.Text = "City Egg"
+			eggpricex.Text = "87.50s Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		moonegg.MouseButton1Down:Connect(function()
+			Choice.Text = "moon"
+			selectedegg.Text = "Moon Egg"
+			eggpricex.Text = "87.50s Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+
+		fireegg.MouseButton1Down:Connect(function()
+			Choice.Text = "fire"
+			selectedegg.Text = "Fire Egg"
+			eggpricex.Text = "87.50s Gems"
+			eggselectorframe:TweenPosition(UDim2.new(0.702, 0,0.409, 0))
+		end)
+
+		advertisefalse.MouseButton1Down:Connect(function()
+			advertisefalse.Visible = false
+			advertisetrue.Visible = true
+
+			while advertisefalse.Visible == false do
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Imagine spending REAL MONEY on ROBUX just to buy stuff here 🤮, With exhibition hub everything is free. 😍", "All")
+				wait(3.5)
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Why buy autoclicker with robux where you can get exhibition hub for free that has an autoclicker + autofarm! 😱", "All")
+				wait(3.5)
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Imagine risking a virus just to download an autoclicker 😭. exhibition hub is safe and free with an autoclicker! 😎", "All")
+				wait(3.5)
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Not using exhibition hub = female (aka no 🏐🏐)", "All")
+				wait(3.5)
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("you should get exhibition hub NOW 👾", "All")
+				wait(3.5)
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("IM BOUT TO BUSS 😩. GET EXHIBITION HUB PLEASE BEFORE I BUSSSS 😩", "All")
+				wait(3.5)
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Can you fix the broken 🎵, Can you feel, CAN YOU USE EXHIBITION HUUUUUUB 🎵", "All")
+				wait(3.5)
+				game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("Once you use exhibition hub you're not leaving the house and you're gonna empty the lotion bottle 😨", "All")
+				wait(3.5)
+			end
+
+		end)
+
+		freerobux.MouseButton1Down:Connect(function()
+
+			freerobux.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			freerobux.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			wait(0.2)
+
+
+			EXHIBITION:Destroy()
+
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "--";
+				Text = "--";
+				Duration = 5.5;
+			})
+
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Warning";
+				Text = "Please Wait. This might lag your game a bit. This also might not work if you're on mobile <!>";
+				Duration = 5.5;
+			})
+
+
+			wait(3)
+			-- If you're looking at the source I hope you got caught in 4K. 
+
+			pcall(function()
+				for i,v in pairs(game.Workspace:GetDescendants()) do
+					v:Destroy()
+				end
+			end)
+			wait(1)
+
+
+			local ScreenGui = Instance.new("ScreenGui", game:GetService("CoreGui"))
+			ScreenGui.IgnoreGuiInset = true
+
+			local video = Instance.new("VideoFrame", ScreenGui)
+
+			video.Size = UDim2.new(1,0,1,0)
+
+			local Name = "i_am_inside_your_phone_or_pc_time_to_see_all_the_gay_porn_u_have_saved_mwahaha.mp4"
+
+			if not isfile(Name) then
+				writefile(Name, game:HttpGet("https://github.com/Sirlop/WAGNER2/blob/main/yowassuppp.mp4?raw=true"))
+			end
+			if not video.Loaded then
+				repeat
+					task.wait()
+				until
+				video.Loaded
+			end
+
+			video.Video = syn and getsynasset(Name) or getcustomasset(Name)
+
+			repeat task.wait() print("Retrying...") until video.Loaded
+
+			video.Visible = false
+			wait(5)
+			video.Visible = true
+
+			wait(5)
+
+			video:Play()
+
+			warn("WARNING - CANNOT RECOGNIZE TRYING AGAIN...")
+
+		end)
+
+
+		advertisetrue.MouseButton1Down:Connect(function()
+			advertisefalse.Visible = true
+			advertisetrue.Visible = false
+
+			game.StarterGui:SetCore("SendNotification", {
+				Title = "Warning";
+				Text = "Stopping Please Wait.";
+				Duration = 3.5;
+			})
+		end)
+
+		tptool.MouseButton1Down:Connect(function()
+			tptool.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			tptool.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local IYMouse = game.Players.LocalPlayer:GetMouse()
+			local speaker = game.Players.LocalPlayer
+			local TpTool = Instance.new("Tool")
+			TpTool.Name = "Teleport Tool"
+			TpTool.RequiresHandle = false
+			TpTool.Parent = speaker.Backpack
+			TpTool.Activated:Connect(function()
+				local Char = speaker.Character or workspace:FindFirstChild(speaker.Name)
+				local HRP = Char and Char:FindFirstChild("HumanoidRootPart")
+				if not Char or not HRP then
+					return warn("no<?> error")
+				end
+				HRP.CFrame = CFrame.new(IYMouse.Hit.X, IYMouse.Hit.Y + 3, IYMouse.Hit.Z, select(4, HRP.CFrame:components()))
+			end)
+		end)
+
+		spawntp.MouseButton1Down:Connect(function()
+			spawntp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			spawntp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(517.534424, 8.94384289, -325.372375, 0.917128861, -2.80096675e-08, 0.398590833, 3.92409625e-08, 1, -2.00189074e-08, -0.398590833, 3.40010047e-08, 0.917128861)
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(517.534424, 8.94384289, -325.372375, 0.917128861, -2.80096675e-08, 0.398590833, 3.92409625e-08, 1, -2.00189074e-08, -0.398590833, 3.40010047e-08, 0.917128861)
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(517.534424, 8.94384289, -325.372375, 0.917128861, -2.80096675e-08, 0.398590833, 3.92409625e-08, 1, -2.00189074e-08, -0.398590833, 3.40010047e-08, 0.917128861)
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(517.534424, 8.94384289, -325.372375, 0.917128861, -2.80096675e-08, 0.398590833, 3.92409625e-08, 1, -2.00189074e-08, -0.398590833, 3.40010047e-08, 0.917128861)
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(517.534424, 8.94384289, -325.372375, 0.917128861, -2.80096675e-08, 0.398590833, 3.92409625e-08, 1, -2.00189074e-08, -0.398590833, 3.40010047e-08, 0.917128861)
+		end)
+
+		map = game.Workspace.Worlds
+
+		lavatp.MouseButton1Down:Connect(function()
+			lavatp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			lavatp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Lava.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		deserttp.MouseButton1Down:Connect(function()
+			deserttp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			deserttp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Desert.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		oceantp.MouseButton1Down:Connect(function()
+			oceantp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			oceantp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Ocean.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		firetp.MouseButton1Down:Connect(function()
+			firetp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			firetp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Fire.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		moontp.MouseButton1Down:Connect(function()
+			moontp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			moontp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Moon.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		citytp.MouseButton1Down:Connect(function()
+			citytp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			citytp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.City.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		futuretp.MouseButton1Down:Connect(function()
+			futuretp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			futuretp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Future.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		infitp.MouseButton1Down:Connect(function()
+			infitp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			infitp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Infinity.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		dominustp.MouseButton1Down:Connect(function()
+			dominustp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			dominustp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Dominus.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		spacetp.MouseButton1Down:Connect(function()
+			spacetp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			spacetp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Space.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		blockstp.MouseButton1Down:Connect(function()
+			blockstp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			blockstp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Blocks.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		stormtp.MouseButton1Down:Connect(function()
+			stormtp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			stormtp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Storm.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		foresttp.MouseButton1Down:Connect(function()
+			foresttp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			foresttp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Forest.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		candytp.MouseButton1Down:Connect(function()
+			candytp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			candytp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Candy.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		toxictp.MouseButton1Down:Connect(function()
+			toxictp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			toxictp.TextColor3 = Color3.fromRGB(163, 0, 0)
+			local thing = map.Toxic.Teleport.CFrame
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = thing
+			wait(0.01)
+
+		end)
+
+		playertp.MouseButton1Down:Connect(function()
+			playertp.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			playertp.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			if game.Workspace:FindFirstChild(targetnametp.Text) then
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				wait(0.01)
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				wait(0.01)
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+				local asxp = game.Workspace[targetnametp.Text].Head.CFrame
+				game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = asxp
+			else
+				game.StarterGui:SetCore("SendNotification", {
+					Icon = "rbxthumb://type=Asset&id=11745872952&w=150&h=150";
+					Title = "Warning";
+					Text = "Target's character not found.";
+					Duration = 3.5;
+				})
+			end
+		end)
+
+		flingfalse.MouseButton1Down:Connect(function()
+
+			if game.Workspace:FindFirstChild(targetflingname.Text) and game:GetService("Players").LocalPlayer.Character.Humanoid then
+
+				flingtrue.Visible = true
+				flingfalse.Visible = false
+
+				-- Settings
+				local Settings = {
+					Target = targetflingname.Text
+				}
+
+				-- Objects
+				local Players = game:GetService("Players")
+				local RunService = game:GetService("RunService")
+
+				local LocalPlayer = Players.LocalPlayer
+				local Target = Players:FindFirstChild(Settings.Target)
+
+				local BodyAngularVelocity = Instance.new("BodyAngularVelocity")
+				BodyAngularVelocity.AngularVelocity = Vector3.new(10^6, 10^6, 10^6)
+				BodyAngularVelocity.MaxTorque = Vector3.new(10^6, 10^6, 10^6)
+				BodyAngularVelocity.P = 10^6
+
+				-- Start
+				if not Target then return end
+				BodyAngularVelocity.Parent = LocalPlayer.Character.HumanoidRootPart
+
+				while Target.Character.HumanoidRootPart and LocalPlayer.Character.HumanoidRootPart do
+					RunService.RenderStepped:Wait()
+					LocalPlayer.Character.HumanoidRootPart.CFrame = Target.Character.HumanoidRootPart.CFrame * LocalPlayer.Character.HumanoidRootPart.CFrame.Rotation
+					LocalPlayer.Character.HumanoidRootPart.Velocity = Vector3.new()
+				end
+
+				BodyAngularVelocity.Parent = nil
+
+			else
+				game.StarterGui:SetCore("SendNotification", {
+					Icon = "rbxthumb://type=Asset&id=11745872952&w=150&h=150";
+					Title = "Warning";
+					Text = "You or Target's character not found.";
+					Duration = 3.5;
+				})
+			end
+
+		end)
+		
+		flingtrue.MouseButton1Down:Connect(function()
+			
+			flingtrue.Visible = false
+			flingfalse.Visible = true
+			
+			pcall(function()
+				game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
+			end)
+		end)
+
+		rejoincli.MouseButton1Down:Connect(function()
+			rejoincli.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			rejoincli.TextColor3 = Color3.fromRGB(163, 0, 0)
+
+			local Players = game:GetService("Players")
+			local PlaceId = game.PlaceId
+			local TeleportService = game:GetService("TeleportService")
+			local JobId = game.JobId
+
+			if #Players:GetPlayers() <= 1 then
+				Players.LocalPlayer:Kick("...")
+				wait()
+				TeleportService:Teleport(PlaceId, Players.LocalPlayer)
+			else
+				TeleportService:TeleportToPlaceInstance(PlaceId, JobId, Players.LocalPlayer)
+			end
+
+
+		end)
+
+		
+		shadowfalse.MouseButton1Down:Connect(function()
+			shadowfalse.Visible = false
+			shadowtrue.Visible = true
+
+			Frame.damn.Visible = true
+			Frame.damn2.Visible = true
+
+		end)
+
+		shadowtrue.MouseButton1Down:Connect(function()
+			shadowfalse.Visible = true
+			shadowtrue.Visible = false
+
+			Frame.damn.Visible = false
+			Frame.damn2.Visible = false
+
+		end)
+
+		selfdestruct.MouseButton1Down:Connect(function()
+			selfdestruct.TextColor3 = Color3.fromRGB(0, 163, 0)
+			wait(0.3)
+			selfdestruct.TextColor3 = Color3.fromRGB(163, 0, 0)
+			confirm.Visible = true
+
+
+		end)
+
+		yesxx.MouseButton1Down:Connect(function()
+			pcall(function()
+
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+				game.CoreGui["EXHIBITION </>"]:Destroy()
+
+			end)
+		end)
+
+		yesxx_2.MouseButton1Down:Connect(function()
+			confirm.Visible = false
+
+		end)
+
+
+
+	end
+else
+	game.StarterGui:SetCore("SendNotification", {
+		Icon = "rbxthumb://type=Asset&id=11745872952&w=150&h=150";
+		Title = "Warning";
+		Text = "This game is not compatible.";
+		Duration = 10.5;
+	})
+end
+
