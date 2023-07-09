@@ -1301,7 +1301,7 @@ if game.PlaceId == 5490351219 then
 		lastupdat.Position = UDim2.new(0.532846689, 0, 0.140100092, 0)
 		lastupdat.Size = UDim2.new(0, 30, 0, 50)
 		lastupdat.Font = Enum.Font.FredokaOne
-		lastupdat.Text = "?"
+		lastupdat.Text = "Jul 9th 2023"
 		lastupdat.TextColor3 = Color3.fromRGB(178, 178, 178)
 		lastupdat.TextSize = 18.000
 		lastupdat.TextXAlignment = Enum.TextXAlignment.Left
